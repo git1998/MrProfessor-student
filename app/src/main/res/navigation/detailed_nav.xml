@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/detailed_nav">
+    <fragment
+        android:id="@+id/enrolledMaterialDeep1Fragment"
+        android:name="com.akshay.minglishmantra_beta.Fragment.ClassroomMaterialDeep1Fragment"
+        android:label="enrolled_fragment_material_deep1"
+        tools:layout="@layout/enrolled_fragment_material_deep1" />
+
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="com.akshay.minglishmantra_beta.Fragment.NotificationFragment"
+        android:label="notification_fragment"
+        tools:layout="@layout/notification_fragment" />
+</navigation>

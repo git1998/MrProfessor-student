@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/enrolled_material_single_content_parentRl"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="8dp"
+    android:background="@color/faintest_grey">
+
+
+    <TextView
+        android:id="@+id/enrolled_material_single_content_tittleTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:fontFamily="@font/varela"
+        android:text="Q.1"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="14dp" />
+
+
+    <TextView
+        android:id="@+id/onlinetest_single_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/enrolled_material_single_content_tittleTv"
+        android:layout_alignStart="@id/enrolled_material_single_content_tittleTv"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/varela"
+        android:text="Write and explain three laws of planetary motion by kepler"
+        android:textSize="16dp"
+        android:textColor="@color/black"/>
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/sjldiof"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/onlinetest_single_time"/>
+
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/vkood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sjldiof"
+        android:layout_alignStart="@id/enrolled_material_single_content_tittleTv"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/varela"
+        android:text="Write and explain three laws of planetary motion by kepler"
+        android:textSize="16dp"
+        android:textColor="@color/black"/>
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/test_single_subjectivequestion_in_mcqLayoutLl"
+        android:layout_below="@id/vkood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="12dp">
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/cardColor">
+
+
+            <TextView
+                android:id="@+id/single_ask_optionadd_optionNoTv"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:gravity="center"
+                android:text="A"
+                android:textColor="@color/black"
+                android:fontFamily="@font/mo_re"
+                android:textSize="14dp"
+                android:background="@drawable/round_grey_empty"/>
+
+
+            <TextView
+                android:id="@+id/single_ask_optionadd_optionNoEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/single_ask_optionadd_optionNoTv"
+                android:layout_marginLeft="4dp"
+                android:paddingHorizontal="12dp"
+                android:layout_centerVertical="true"
+                android:hint="Option 1"
+                android:textSize="16dp"
+                android:fontFamily="@font/varela"
+                android:background="@android:color/transparent"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/cardColor">
+
+
+            <TextView
+                android:id="@+id/single_ask_optionadd_optionNoTv"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:gravity="center"
+                android:text="B"
+                android:textColor="@color/black"
+                android:fontFamily="@font/mo_re"
+                android:textSize="14dp"
+                android:background="@drawable/round_grey_empty"/>
+
+
+            <TextView
+                android:id="@+id/single_ask_optionadd_optionNoEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/single_ask_optionadd_optionNoTv"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="4dp"
+                android:paddingHorizontal="12dp"
+                android:hint="Option 2"
+                android:textSize="16dp"
+                android:fontFamily="@font/varela"
+                android:background="@android:color/transparent"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/cardColor">
+
+
+            <TextView
+                android:id="@+id/single_ask_optionadd_optionNoTv"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:gravity="center"
+                android:text="C"
+                android:textColor="@color/black"
+                android:fontFamily="@font/mo_re"
+                android:textSize="14dp"
+                android:background="@drawable/round_grey_empty"/>
+
+
+            <TextView
+                android:id="@+id/single_ask_optionadd_optionNoEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/single_ask_optionadd_optionNoTv"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="4dp"
+                android:paddingHorizontal="12dp"
+                android:hint="Option 3"
+                android:textSize="16dp"
+                android:fontFamily="@font/varela"
+                android:background="@android:color/transparent"/>
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/cardColor">
+
+
+            <TextView
+                android:id="@+id/single_ask_optionadd_optionNoTv"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:gravity="center"
+                android:text="D"
+                android:textColor="@color/black"
+                android:fontFamily="@font/mo_re"
+                android:textSize="14dp"
+                android:background="@drawable/round_grey_empty"/>
+
+
+            <TextView
+                android:id="@+id/single_ask_optionadd_optionNoEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/single_ask_optionadd_optionNoTv"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="4dp"
+                android:paddingHorizontal="12dp"
+                android:hint="Option 4"
+                android:textSize="16dp"
+                android:fontFamily="@font/varela"
+                android:background="@android:color/transparent"/>
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+    <TextView
+        android:id="@+id/sososp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="12dp"
+        android:fontFamily="@font/varela"
+        android:text="( 2 )"
+        android:textColor="@color/darkGrey"
+        android:textStyle="bold"
+        android:textSize="14dp" />
+
+
+
+
+</RelativeLayout>

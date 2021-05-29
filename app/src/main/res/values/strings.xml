@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">MrProfessor</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="study_type">
+        <item>Maharashtra Board</item>
+        <item>CBSC Board</item>
+        <item>MHT-CET</item>
+        <item>IIT-JEE</item>
+    </string-array>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="top_sheet_behavior" translatable="false">com.example.navigationcomponentwithbottomnavigationanddrawer.Utility.TopSheetBehavior</string>
+
+
+    <string name="current_date">June, 2016</string>
+    <string name="add_event">ADD CALENDAR EVENT</string>
+    <string name="last_date">30</string>
+
+
+</resources>

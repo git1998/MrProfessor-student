@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/doubt_main_single_chapters_tittleTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="12dp"
+      android:paddingHorizontal="16dp"
+        android:fontFamily="@font/varela"
+        android:text="All"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+
+
+    <View
+        android:visibility="gone"
+        android:id="@+id/doubt_main_single_chapters_viewV"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey"/>
+
+</LinearLayout>

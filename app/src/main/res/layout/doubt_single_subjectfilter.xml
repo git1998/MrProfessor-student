@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/single_selectfiltersubject_root"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/single_selectfiltersubject_cv"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            app:cardCornerRadius="25dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="8dp"
+            android:elevation="0dp"
+            app:cardElevation="0dp"
+            android:backgroundTint="@color/cardColor">
+
+            <ImageView
+                android:id="@+id/single_selectfiltersubject_iv"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:padding="12dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:tint="@color/jastest_grey"
+                android:src="@drawable/ic_g_translate_black_24dp"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/single_selectfiltersubject_tv"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:textSize="12dp"
+            android:fontFamily="@font/varela"
+            android:textColor="@color/jast_grey"
+            android:text="Minglish Mantra - MPSC" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

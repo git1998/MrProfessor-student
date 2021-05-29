@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp"
+    android:background="@color/cardColor">
+
+    <ImageView
+        android:id="@+id/login_otp_fragment_backIv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_chevron_left_black_24dp"/>
+
+
+    <TextView
+        android:id="@+id/iooopo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/makapp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/varela"
+        android:text="Enter OTP"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        />
+
+
+    <TextView
+        android:id="@+id/login_otp_fragment_numberInfoTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iooopo"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/varela"
+        android:text="Please enter the OTP sent to (+91) 7841992050"
+        android:textColor="@color/darkGrey"
+        android:textSize="16dp"
+        />
+
+    <TextView
+        android:id="@+id/login_otp_fragment_editNumberTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_below="@id/login_otp_fragment_numberInfoTv"
+       android:layout_marginLeft="12dp"
+        android:fontFamily="@font/doppio_one"
+        android:text="Edit"
+        android:textColor="@color/darkGrey"
+        android:textSize="14dp"
+        android:background="@drawable/textview_background_bottom"
+        />
+
+
+    <ImageView
+        android:id="@+id/makaiooopospp"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/login_otp_fragment_editNumberTv"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/chetan_sms"/>
+
+
+
+    <EditText
+        android:id="@+id/login_otp_fragment_otpEt"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+       android:layout_below="@id/makaiooopospp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:paddingHorizontal="12dp"
+        android:fontFamily="@font/varela"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:inputType="number"
+        android:hint="Enter OTP here"
+        android:textColorHint="@color/grey"
+        android:textStyle="bold" />
+
+
+
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/iossosaaopo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/login_otp_fragment_otpEt"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/varela"
+        android:text="0 sec left"
+        android:textColor="@color/primaryRed"
+        android:textSize="14dp"
+        />
+
+
+    <TextView
+        android:visibility="visible"
+        android:id="@+id/iossosaaaopao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iossosaaopo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:fontFamily="@font/varela"
+        android:text="Note : Sometimes OTP takes few minutes ,Please stay on this page"
+        android:textStyle="italic"
+        android:textColor="@color/red"
+        android:textSize="16dp"
+        />
+
+
+    <TextView
+        android:visibility="visible"
+        android:id="@+id/login_otp_fragment_nextTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="12dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="14dp"
+        android:text="NEXT"
+        android:textColor="@color/cardColor"
+        android:fontFamily="@font/varela"
+        android:background="@color/colorPrimaryGreen"/>
+
+
+
+</RelativeLayout>

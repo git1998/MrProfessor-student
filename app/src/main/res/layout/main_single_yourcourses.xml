@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/single_selectfiltersubject_root"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/box_cornered_whitefilled_greystroke"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/single_selectfiltersubject_iv"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/cornered_button2"
+            android:gravity="center"
+            android:padding="4dp"
+            android:src="@drawable/upsc_logo" />
+
+
+        <TextView
+            android:id="@+id/main_single_yourcourses_courseNameTv"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/varela"
+            android:gravity="center"
+            android:text="SBI BANKING PO"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/browse_single_course_freeTrialLl"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/main_single_yourcourses_endsInTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="0dp"
+                android:textSize="12dp"
+                android:fontFamily="@font/varela"
+                android:textColor="@color/primaryRed"
+                android:text="Free trial ends in" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/fdsffrg"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true">
+
+
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/main_single_yourcourses_daysTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:fontFamily="@font/varela"
+                android:textColor="@color/black"
+                android:text="02" />
+
+
+
+            <TextView
+                android:visibility="gone"
+                android:layout_weight="1"
+                android:id="@+id/browse_single_course_hrsTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:fontFamily="@font/varela"
+                android:textColor="@color/black"
+                android:text="11" />
+
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:id="@+id/aass"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true">
+
+
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/joj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="12dp"
+                android:fontFamily="@font/varela"
+                android:textColor="@color/jast_grey"
+                android:text="days" />
+
+
+
+            <TextView
+                android:visibility="gone"
+                android:layout_weight="1"
+                android:id="@+id/joj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="12dp"
+                android:fontFamily="@font/varela"
+                android:textColor="@color/jast_grey"
+                android:text="hrs" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:visibility="visible"
+            android:id="@+id/main_single_yourcourses_buyCourseTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="12dp"
+            android:paddingVertical="8dp"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:text="BUY COURSE"
+            android:textColor="@color/cardColor"
+            android:fontFamily="@font/varela"
+            android:backgroundTint="@color/colorPrimaryGreen"
+            android:background="@drawable/box_cornered_whitefilled_green"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

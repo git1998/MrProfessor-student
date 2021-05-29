@@ -1,0 +1,85 @@
+{
+  "project_info": {
+    "project_number": "55728850631",
+    "firebase_url": "https://mr-professor-2b15c-default-rtdb.firebaseio.com",
+    "project_id": "mr-professor-2b15c",
+    "storage_bucket": "mr-professor-2b15c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:55728850631:android:e543e1d6eb968c692e20e2",
+        "android_client_info": {
+          "package_name": "com.akshay.minglishmantra_beta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "55728850631-3u5labpkc5jepskkvtcaaok4n32am585.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.akshay.minglishmantra_beta",
+            "certificate_hash": "d8558ecc75a23f35205f42e2c659f6810c020650"
+          }
+        },
+        {
+          "client_id": "55728850631-5aukifk35ru5lnc24vkalivadmr3cfe2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.akshay.minglishmantra_beta",
+            "certificate_hash": "d01cf907e4de8f9f655048c044737010b0fd1dfa"
+          }
+        },
+        {
+          "client_id": "55728850631-bcnipbu7edk54ik5opvqte3mr1u40d2m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHnDHCk5rOm4Yl-NYuXd--q0RaDeCQYhI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "55728850631-bcnipbu7edk54ik5opvqte3mr1u40d2m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:55728850631:android:e69ddfaf42c473a02e20e2",
+        "android_client_info": {
+          "package_name": "com.example.minglishmantra_staff"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "55728850631-bcnipbu7edk54ik5opvqte3mr1u40d2m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHnDHCk5rOm4Yl-NYuXd--q0RaDeCQYhI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "55728850631-bcnipbu7edk54ik5opvqte3mr1u40d2m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

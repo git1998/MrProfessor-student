@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_nav"
+    app:startDestination="@id/loginMainFragment">
+
+    <fragment
+        android:id="@+id/loginMainFragment"
+        android:name="com.akshay.minglishmantra_beta.Fragment.LoginMainFragment"
+        android:label="login_main_fragment"
+        tools:layout="@layout/login_main_fragment" />
+    <fragment
+        android:id="@+id/loginOtpFragment"
+        android:name="com.akshay.minglishmantra_beta.Fragment.LoginOtpFragment"
+        android:label="login_otp_fragment"
+        tools:layout="@layout/login_otp_fragment" />
+    <fragment
+        android:id="@+id/loginProfileFragment"
+        android:name="com.akshay.minglishmantra_beta.Fragment.LoginProfileFragment"
+        android:label="login_profile_fragment"
+        tools:layout="@layout/login_profile_fragment" />
+</navigation>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:visibility="visible"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+
+
+    <LinearLayout
+        android:visibility="visible"
+        android:id="@+id/activity_main_liveSessionLl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/cardColor"
+        android:layout_marginTop="0dp"
+        android:padding="12dp"
+        android:paddingVertical="12dp">
+
+
+        <TextView
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/activity_main_drawerIv"
+            android:text="Todays Sessions"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/varela"/>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:visibility="visible"
+            android:id="@+id/main_prepare_fragment_liveSessionsRv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="12dp"/>
+
+
+
+        <TextView
+            android:id="@+id/main_live_fragment_todayloadingTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingVertical="10dp"
+            android:layout_marginBottom="0dp"
+            android:text="Loading..."
+            android:textColor="@color/darkGrey"
+            android:textSize="14dp"
+            android:fontFamily="@font/varela" />
+
+
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/activity_main_recentSessionLl"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/cardColor"
+        android:layout_marginTop="8dp"
+        android:padding="12dp">
+
+        <TextView
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/activity_main_drawerIv"
+            android:text="Recent Sessions"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/varela"/>
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:visibility="visible"
+            android:id="@+id/main_prepare_fragment_RecentSessionsRv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="12dp"/>
+
+
+        <TextView
+            android:id="@+id/main_live_fragment_recentloadingTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingVertical="10dp"
+            android:layout_marginBottom="0dp"
+            android:text="Loading..."
+            android:textColor="@color/darkGrey"
+            android:textSize="14dp"
+            android:fontFamily="@font/varela" />
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

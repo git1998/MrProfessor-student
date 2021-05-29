@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.akshay.minglishmantra_beta.Activity.SplashActivity"
+    android:background="@color/cardColor"
+    >
+
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_weight="1"
+        android:id="@+id/fskfmdsnbfmdznfs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/fsmfcks"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/fsvks"
+            app:cardCornerRadius="50dp">
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@drawable/realapplogo"/>
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/dafdfa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/fcmzfj"
+            android:layout_centerHorizontal="true"
+            android:textSize="16dp"
+            android:fontFamily="@font/mo_re"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="Atul Thakre" />
+
+
+        <TextView
+            android:id="@+id/fcmzfj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="32dp"
+            android:gravity="center"
+            android:layout_marginTop="12dp"
+            android:textSize="18dp"
+            android:fontFamily="@font/varela"
+            android:textColor="@color/darkGrey"
+            android:text="बोलून विचार करण्यापेक्षा बोलण्याआधी विचार केलेला बरा - आर्यभट" />
+
+
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/fcmzfj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="12dp"
+            android:textSize="14dp"
+            android:fontFamily="@font/varela"
+            android:textColor="@color/darkGrey"
+            android:textStyle="bold"
+            android:text="Contact us : 7842448202" />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/dnbsambdsa"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+     android:layout_marginTop="120dp"
+        android:layout_centerHorizontal="true"
+        android:padding="16dp"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:src="@drawable/spash_rocket"
+        android:tint="@color/cardColor"
+        android:backgroundTint="@color/colorPrimaryGreen"
+        android:background="@drawable/cornered_button"/>
+
+
+    <TextView
+        android:id="@+id/dmbsajdbsa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fdsgfdg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textSize="14dp"
+        android:fontFamily="@font/varela"
+        android:textColor="@color/darkGrey"
+        android:text="Wait a moment , just there..." />
+
+    <androidx.cardview.widget.CardView
+        android:visibility="visible"
+        android:id="@+id/fdsgfdg"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginBottom="12dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/fsvks"
+        app:cardCornerRadius="70dp">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:padding="20dp"
+            android:tint="@color/cardColor"
+            android:background="@drawable/realapplogo"/>
+    </androidx.cardview.widget.CardView>
+
+
+
+    <LinearLayout
+        android:id="@+id/fmdzbfnmsb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+      android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:gravity="center">
+
+
+        <TextView
+            android:visibility="visible"
+            android:id="@+id/fsknfs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/dafdfa"
+            android:layout_marginTop="0dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="14dp"
+            android:fontFamily="@font/mo_re"
+            android:textColor="@color/darkGrey"
+            android:text="From" />
+
+
+
+        <TextView
+            android:visibility="visible"
+            android:id="@+id/dafdfa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/fcmzfj"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="4dp"
+            android:textSize="18dp"
+            android:fontFamily="@font/varela"
+            android:textColor="@color/colorPrimaryGreen"
+            android:text="Mr.Professor" />
+
+
+
+        <ProgressBar
+            android:visibility="gone"
+            android:id="@+id/activity_splash_progressbarPb"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:indeterminateTint="@color/colorPrimaryGreen"
+            android:layout_alignParentBottom="true"
+            android:indeterminate="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:layout_marginHorizontal="24dp"
+            android:layout_centerHorizontal="true"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

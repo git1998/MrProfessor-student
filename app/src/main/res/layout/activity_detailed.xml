@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/cardColor">
+
+
+            <ImageView
+                android:id="@+id/activity_main_drawerIv"
+                android:layout_height="32dp"
+                android:layout_width="32dp"
+                android:layout_marginLeft="12dp"
+                android:layout_centerVertical="true"
+                android:tint="@color/jastest_grey"
+                android:src="@drawable/ic_chevron_left_black_24dp"/>
+
+
+            <TextView
+                android:visibility="visible"
+                android:id="@+id/activity_detailed_titleTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingBottom="4dp"
+                android:layout_toRightOf="@id/activity_main_drawerIv"
+                android:layout_marginLeft="12dp"
+                android:text="Notification"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/varela"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/grey"/>
+
+
+        </RelativeLayout>
+
+
+            <fragment
+                android:id="@+id/host_detailed"
+                android:name="androidx.navigation.fragment.NavHostFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:defaultNavHost="true"
+                app:navGraph="@navigation/detailed_nav" />
+
+
+
+    </LinearLayout>
+

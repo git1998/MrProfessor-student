@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_detailed_nav"
+    app:startDestination="@id/blankMaindetailedFragment">
+
+    <fragment
+        android:id="@+id/mainDoubtDeep0Fragment"
+        android:name="com.akshay.minglishmantra_beta.Fragment.DoubtAskFragment"
+        android:label="doubt_deep0_fragment"
+        tools:layout="@layout/doubt_ask_fragment" />
+    <fragment
+        android:id="@+id/mainDoubtDeep1Fragment"
+        android:name="com.akshay.minglishmantra_beta.Fragment.DoubtAsk1Fragment"
+        android:label="doubt_deep1_fragment"
+        tools:layout="@layout/doubt_ask1_fragment" />
+    <fragment
+        android:id="@+id/mainSearchFragment"
+        android:name="com.akshay.minglishmantra_beta.Fragment.SearchFragment"
+        android:label="search_fragment"
+        tools:layout="@layout/search_fragment" />
+    <fragment
+        android:id="@+id/doubtCommentFragment"
+        android:name="com.akshay.minglishmantra_beta.Fragment.DoubtCommentFragment"
+        android:label="doubt_comment_fragment"
+        tools:layout="@layout/doubt_comment_fragment" />
+    <fragment
+        android:id="@+id/doubtDiscussionFragment"
+        android:name="com.akshay.minglishmantra_beta.Fragment.DoubtDiscussionFragment"
+        android:label="doubt_discussion_fragment"
+        tools:layout="@layout/doubt_discussion_fragment" />
+    <fragment
+        android:id="@+id/blankMaindetailedFragment"
+        android:name="com.akshay.minglishmantra_beta.Fragment.BlankFragment"
+        android:label="blank_maindetailed_fragment"
+        tools:layout="@layout/blank_fragment" />
+    <fragment
+        android:id="@+id/postCommentFragment"
+        android:name="com.akshay.minglishmantra_beta.Fragment.PostCommentFragment"
+        android:label="post_comment_fragment"
+        tools:layout="@layout/post_comment_fragment" />
+</navigation>

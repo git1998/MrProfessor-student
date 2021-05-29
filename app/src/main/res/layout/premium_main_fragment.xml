@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="24dp"
+            android:paddingVertical="16dp"
+            android:background="@color/colorPrimaryGreen">
+
+
+            <TextView
+                android:id="@+id/question_single_date_subject_topic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/varela"
+                android:textSize="14dp"
+                android:text="Hello Abhijit"/>
+
+
+            <TextView
+                android:id="@+id/question_single_date_subject_topic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/doppio_one"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:text="Which coaching class you want to join ?"/>
+
+
+            <LinearLayout
+                android:id="@+id/oiusaa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="12dp">
+
+                <ImageView
+                    android:id="@+id/iooopo"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_search_2"
+                    android:tint="@color/cardColor"
+                    />
+
+                <EditText
+                    android:id="@+id/login_main_fragment_mobileNoEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                  android:layout_marginLeft="4dp"
+                    android:fontFamily="@font/varela"
+                    android:textSize="16dp"
+                    android:inputType="number"
+                    android:textColor="@color/black"
+                    android:hint="Search for your coaching class here"
+                    android:textColorHint="@color/cardColor"
+                    android:background="@android:color/transparent"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="4dp"
+                android:background="@color/cardColor"/>
+
+
+        </LinearLayout>
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/login_selectcourse_fragment_recyclerviewRv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+
+
+    </LinearLayout>
+
+
+
+</androidx.core.widget.NestedScrollView>

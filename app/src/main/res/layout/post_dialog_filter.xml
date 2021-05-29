@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/home_dialog_filter_tittleTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="12dp"
+        android:paddingHorizontal="12dp"
+        android:gravity="center_vertical"
+        android:drawableLeft="@drawable/ic_filter_list_black_24dp"
+        android:drawableTint="@color/jastest_grey"
+        android:drawableRight="@drawable/ic_close_black_24dp"
+        android:fontFamily="@font/varela"
+        android:text="  FILTER"
+        android:textColor="@color/jastest_grey"
+        android:textSize="12dp" />
+
+
+    <View
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/home_dialog_filter_addViewLl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+
+
+</LinearLayout>

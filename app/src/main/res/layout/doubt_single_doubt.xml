@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/question_single_rl"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="16dp"
+    android:paddingBottom="12dp"
+    android:paddingTop="16dp"
+    android:layout_marginTop="8dp"
+    android:background="@android:color/white">
+
+
+
+            <ImageView
+                android:id="@+id/onlinetest_tv1"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="4dp"
+                android:tint="@color/colorPrimaryGreen"
+                android:src="@drawable/ic_doubt_black_24dp"/>
+
+
+        <TextView
+            android:id="@+id/doubt_single_doubt_subjectOrPaperTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/onlinetest_tv1"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="8dp"
+            android:textSize="13dp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:fontFamily="@font/varela"
+            android:text="Mathematics" />
+
+        <TextView
+            android:id="@+id/doubt_single_doubt_dateAndTopicTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/doubt_single_doubt_subjectOrPaperTv"
+            android:layout_below="@id/doubt_single_doubt_subjectOrPaperTv"
+            android:textColor="@android:color/darker_gray"
+            android:fontFamily="@font/varela"
+            android:textSize="11dp"
+            android:text="Nov 12  .  Diffrential equation"/>
+
+
+
+
+        <ImageView
+            android:visibility="visible"
+            android:id="@+id/question_single_isSolvedTvs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:tint="@color/jast_grey"
+            android:src="@drawable/ic_more_vert_black_24dp"
+            />
+
+        <TextView
+            android:visibility="visible"
+            android:id="@+id/doubt_single_doubt_text1Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/doubt_single_doubt_dateAndTopicTv"
+            android:layout_marginTop="12dp"
+            android:textColor="@android:color/black"
+            android:textSize="18dp"
+            android:fontFamily="@font/varela"
+            android:text="Can anyone solve this with trick?"/>
+
+        <ImageView
+            android:id="@+id/doubt_single_doubt_imageviewIv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:layout_below="@id/doubt_single_doubt_text1Tv"
+            android:layout_marginTop="12dp" />
+
+        <TextView
+            android:id="@+id/question_single_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawableLeft="@drawable/ic_chat_bubble_outline_black_24dp"
+            android:drawableTint="@color/grey"
+            android:drawablePadding="4dp"
+            android:layout_marginTop="16dp"
+            android:layout_below="@id/doubt_single_doubt_imageviewIv"
+            android:fontFamily="@font/varela"
+            android:textColor="@color/grey"
+            android:text="NAN"/>
+
+
+
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/jhhjj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="2dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:drawableLeft="@drawable/ic_notifications_none_black_24dp"
+            android:drawableTint="@color/colorPrimaryGreen"
+            android:drawablePadding="4dp"
+            android:layout_below="@id/doubt_single_doubt_imageviewIv"
+            android:fontFamily="@font/varela"
+            android:text="Notification on"
+            android:textColor="@color/colorPrimaryGreen"
+            android:backgroundTint="@color/colorPrimaryBlueFaint"
+            android:background="@drawable/cornered_button"/>
+
+
+
+        <TextView
+            android:id="@+id/doubt_single_doubt_answerBtnTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingVertical="10dp"
+            android:layout_marginTop="12dp"
+            android:layout_below="@id/question_single_answer"
+            android:textSize="15dp"
+            android:text="ANSWER NOW"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/varela"
+            android:background="@color/google_blue"/>
+
+    </RelativeLayout>

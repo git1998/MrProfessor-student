@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.akshay.minglishmantra_beta.Activity.LiveVideoActivity"
+    android:background="@color/grey">
+
+
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:id="@+id/player_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <RelativeLayout
+        android:id="@+id/activity_live_video_relative1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cardColor"
+        android:layout_below="@+id/player_view"
+        android:paddingBottom="8dp">
+
+    <TextView
+        android:id="@+id/activity_live_video_topicName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="12dp"
+        android:fontFamily="@font/varela"
+        android:text="Newton's laws of motion"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="18dp" />
+
+
+        <TextView
+            android:id="@+id/activity_live_video_subTopicName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/activity_live_video_topicName"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="12dp"
+            android:fontFamily="@font/varela"
+            android:text="Basic primer on Newton's First Law of motion"
+            android:textColor="@color/darkGrey"
+            android:textSize="14dp" />
+
+
+        <View
+            android:id="@+id/mcjcxids"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/activity_live_video_subTopicName"
+            android:layout_marginTop="8dp"
+            android:background="@color/grey"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/mcjcxids"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/yuyu"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ic_bookmark_border_black_24dp"
+                android:drawableTint="@color/google_blue"
+                android:fontFamily="@font/varela"
+                android:gravity="center"
+                android:text="Bookmark"
+                android:textColor="@color/google_blue"
+                android:textStyle="bold"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/activity_live_video_viewNotesTv"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ic_find_in_page_black_24dp"
+                android:drawableTint="@color/google_blue"
+                android:fontFamily="@font/varela"
+                android:gravity="center"
+                android:text="View Worksheet"
+                android:textColor="@color/google_blue"
+                android:textStyle="bold"
+                android:textSize="12dp" />
+
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/yuyu"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ic_cloud_download_black_24dp"
+                android:drawableTint="@color/jastest_grey"
+                android:fontFamily="@font/varela"
+                android:gravity="center"
+                android:text="Download"
+                android:textColor="@color/darkGrey"
+                android:textStyle="bold"
+                android:textSize="12dp" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/activity_live_video_relative2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_live_video_relative1"
+        android:layout_above="@+id/activity_live_commentRl"
+        android:padding="12dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/cardColor">
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/iuiussiui"
+            android:layout_height="12dp"
+            android:layout_width="12dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="4dp"
+            android:padding="0dp"
+            android:tint="@color/black"
+            android:src="@drawable/ic_round_red2_24dp"/>
+
+
+
+        <TextView
+            android:id="@+id/ljoijojjffl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iuiussiui"
+            android:layout_marginLeft="0dp"
+
+            android:fontFamily="@font/varela"
+            android:text="COMMENT"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/ouoiu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          android:layout_below="@+id/ljoijojjffl"
+            android:layout_toRightOf="@id/iuiussiui"
+            android:layout_marginLeft="4dp"
+            android:fontFamily="@font/varela"
+            android:text="Started 26 mins ago"
+            android:textSize="12dp"
+            android:textColor="@color/jastest_grey"/>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/activity_video_chatRv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/ouoiu"
+            android:layout_marginTop="2dp"/>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/activity_live_commentRl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/cardColor">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/single_selectfiltersubject_cv"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:cardCornerRadius="15dp"
+               android:layout_marginLeft="12dp"
+                android:layout_centerVertical="true"
+                android:backgroundTint="@color/google_blue">
+
+                <TextView
+                    android:id="@+id/single_selectfiltersubject_iv"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="A"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/varela"
+                    android:textColor="@color/cardColor"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+        <EditText
+            android:id="@+id/activity_video_doubtTextEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_toLeftOf="@id/activity_video_sendTv"
+            android:layout_toRightOf="@+id/single_selectfiltersubject_cv"
+            android:layout_centerVertical="true"
+            android:paddingVertical="8dp"
+            android:layout_marginVertical="2dp"
+            android:fontFamily="@font/varela"
+            android:textColor="@color/black"
+            android:hint="Type your comment here"
+            android:textSize="14dp"
+            android:background="@color/cardColor"/>
+
+
+
+            <TextView
+                android:id="@+id/activity_video_sendTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:paddingHorizontal="24dp"
+                android:paddingVertical="12dp"
+                android:fontFamily="@font/varela"
+                android:text="SEND"
+                android:textColor="@color/cardColor"
+                android:background="@color/jast_grey"/>
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

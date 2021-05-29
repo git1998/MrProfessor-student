@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_nav"
+    app:startDestination="@id/drawerPremiumFragment">
+    <fragment
+        android:id="@+id/drawerPremiumFragment"
+        android:name="com.akshay.minglishmantra_beta.Fragment.DrawerPremiumFragment"
+        android:label="drawer_premium_dilog_buycourse"
+        tools:layout="@layout/drawer_premium_fragment" />
+
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.akshay.minglishmantra_beta.Fragment.DrawerProfileFragment"
+        android:label="profile_fragment"
+        tools:layout="@layout/drawer_profile_fragment" />
+    <fragment
+        android:id="@+id/drawerSavedFragment"
+        android:name="com.akshay.minglishmantra_beta.Fragment.DrawerSavedFragment"
+        android:label="drawer_saved_fragment"
+        tools:layout="@layout/drawer_saved_fragment" />
+    <fragment
+        android:id="@+id/drawerPaymentFragment"
+        android:name="com.akshay.minglishmantra_beta.Fragment.DrawerPaymentFragment"
+        android:label="DrawerPaymentFragment"
+        tools:layout="@layout/drawer_payment_fragment"/>
+    <fragment
+        android:id="@+id/drawerAboutappFragment"
+        android:name="com.akshay.minglishmantra_beta.Fragment.DrawerAboutappFragment"
+        android:label="drawer_aboutapp_fragment"
+        tools:layout="@layout/drawer_aboutapp_fragment" />
+
+</navigation>

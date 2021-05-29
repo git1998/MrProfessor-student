@@ -1,0 +1,86 @@
+<LinearLayout
+    android:id="@+id/uploaddata_fragment_scheudleLiveRl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/cardColor"
+   android:padding="20dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <TextView
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:text="Leave test"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:fontFamily="@font/varela" />
+
+
+    <TextView
+        android:id="@+id/dialog_simpleexit_textTv"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="18dp"
+        android:text="Only 5 questions left ! Are you sure you want to leave the test now? Your progress will be saved for the session."
+        android:textColor="@color/black"
+        android:fontFamily="@font/varela" />
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp">
+
+
+        <TextView
+            android:visibility="visible"
+            android:id="@+id/test_fragment_dialog_upload_backTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="8dp"
+            android:paddingVertical="8dp"
+            android:paddingHorizontal="24dp"
+            android:gravity="center"
+            android:textSize="14dp"
+            android:text="CANCEL"
+            android:textStyle="bold"
+            android:textColor="@color/jast_grey"
+            android:fontFamily="@font/varela" />
+
+
+
+        <TextView
+            android:visibility="visible"
+            android:id="@+id/dialog_simpleexit_nextTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_gravity="center"
+            android:paddingVertical="8dp"
+            android:paddingHorizontal="24dp"
+            android:gravity="center"
+            android:textSize="14dp"
+            android:text="LEAVE"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:fontFamily="@font/varela"
+            android:background="@drawable/box_cornered_googlebluefilled"/>
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

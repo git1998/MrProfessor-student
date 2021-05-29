@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:title="Home"
+        android:id="@id/mainHomeFragment"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:iconTint="@color/grey"
+        android:menuCategory="secondary"/>
+
+    <item
+        android:title="Videos"
+        android:id="@id/mainLiveFragment"
+        android:icon="@drawable/ic_videocam_black_24dp"
+        android:iconTint="@color/grey"
+        android:menuCategory="secondary"/>
+
+
+    <item
+        android:title="Doubts"
+        android:id="@id/mainPostFragment"
+        android:icon="@drawable/ic_live_help_black_24dp"
+        android:iconTint="@color/grey"
+        android:menuCategory="secondary"/>
+
+
+    <item
+        android:title="Test"
+        android:id="@id/mainTestFragment"
+        android:icon="@drawable/ic_test2_black_24dp"
+        android:iconTint="@color/grey"
+        android:menuCategory="secondary"/>
+
+    <item
+        android:title="Courses"
+        android:id="@id/mainPrepareFragment"
+        android:icon="@drawable/ic_subscriptions_black_24dp"
+        android:iconTint="@color/grey"
+        android:menuCategory="secondary"/>
+
+
+
+</menu>

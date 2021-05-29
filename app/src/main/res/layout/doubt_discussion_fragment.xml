@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/grey">
+
+
+    <RelativeLayout
+        android:id="@+id/fsvks"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/cardColor">
+
+
+        <ImageView
+            android:id="@+id/doubt_discussion_fragment_backIv"
+            android:layout_height="32dp"
+            android:layout_width="32dp"
+            android:layout_marginLeft="12dp"
+            android:layout_centerVertical="true"
+            android:tint="@color/jastest_grey"
+            android:src="@drawable/ic_chevron_left_black_24dp"/>
+
+
+        <TextView
+            android:visibility="visible"
+            android:id="@+id/activity_detailed_titleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingBottom="4dp"
+            android:layout_toRightOf="@id/doubt_discussion_fragment_backIv"
+            android:layout_marginLeft="12dp"
+            android:text="Discussion"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/varela"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/grey"/>
+
+
+    </RelativeLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/cardColor"
+        android:layout_below="@+id/fsvks">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout android:id="@+id/question_single_rl"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="12dp"
+                android:paddingTop="12dp"
+                android:paddingBottom="0dp"
+                android:layout_marginBottom="4dp"
+                android:background="@android:color/white"
+                xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/onlinetest_tv1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:cardCornerRadius="20dp"
+                    android:elevation="0dp"
+                    app:cardElevation="0dp">
+
+                    <ImageView
+                        android:id="@+id/doubt_discussion_fragment_senderImageIv"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_person_black_24dp"/>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+                <TextView
+                    android:id="@+id/doubt_discussion_fragment_senderTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/onlinetest_tv1"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="8dp"
+                    android:textSize="12dp"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/varela"
+                    android:text="Abhijit bodulwar" />
+
+                <TextView
+                    android:id="@+id/doubt_discussion_fragment_timeTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@id/doubt_discussion_fragment_senderTv"
+                    android:layout_below="@id/doubt_discussion_fragment_senderTv"
+                    android:textColor="@android:color/darker_gray"
+                    android:fontFamily="@font/varela"
+                    android:textSize="12dp"
+                    android:text="2 hrs"/>
+
+
+
+
+                <ImageView
+                    android:visibility="visible"
+                    android:id="@+id/question_single_isSolvedTvs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:tint="@color/jast_grey"
+                    android:src="@drawable/ic_more_vert_black_24dp"
+                    />
+
+                <TextView
+                    android:visibility="visible"
+                    android:id="@+id/doubt_discussion_fragment_textTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/onlinetest_tv1"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/varela"
+                    android:text="Can anyone solve this with trick?"/>
+
+                <ImageView
+                    android:visibility="visible"
+                    android:id="@+id/doubt_discussion_fragment_ImageIv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:layout_below="@id/doubt_discussion_fragment_textTv"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/questionimage"/>
+
+
+                <TextView
+                    android:id="@+id/fdnsnks"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@id/doubt_discussion_fragment_ImageIv"
+                    android:fontFamily="@font/varela"
+                    android:textColor="@color/jast_grey"
+                    android:text="0 Discussions      0 Thank You "/>
+
+
+                <View
+                    android:id="@+id/question_single_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/fdnsnks"
+                    android:layout_marginTop="12dp"
+                    android:background="@color/faint_grey"/>
+
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:visibility="visible"
+                android:id="@+id/question_single_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="8dp"
+                android:layout_marginLeft="16dp"
+                android:textColor="@android:color/black"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/doppio_one"
+                android:text="Discussions"/>
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/doubt_discusion_fragment_recyclerviewRv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingHorizontal="12dp"
+                android:paddingBottom="40dp"/>
+
+
+
+
+        </LinearLayout>
+
+
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+    <RelativeLayout
+        android:id="@+id/activity_video_sendDoubtRl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/cardColor">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey" />
+
+        <ImageView
+            android:id="@+id/single_selectfiltersubject_cv"
+            android:layout_height="30dp"
+            android:layout_width="30dp"
+            android:layout_marginLeft="12dp"
+        android:layout_centerVertical="true"
+            android:gravity="center"
+            android:fontFamily="@font/varela"
+            android:textColor="@color/cardColor"
+            android:tint="@color/colorPrimaryGreen"
+            android:src="@drawable/ic_camera_alt_black_24dp"/>
+
+
+
+
+        <EditText
+            android:id="@+id/doubt_discussion_fragment_commentEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:paddingVertical="8dp"
+            android:layout_toLeftOf="@id/doubt_discussion_fragment_sendTv"
+            android:layout_toRightOf="@+id/single_selectfiltersubject_cv"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/varela"
+            android:textColor="@color/black"
+            android:hint="Start discussing now!"
+            android:textSize="14dp"
+            android:background="@color/cardColor"/>
+
+
+
+        <TextView
+            android:id="@+id/doubt_discussion_fragment_sendTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingHorizontal="24dp"
+            android:paddingVertical="12dp"
+            android:fontFamily="@font/varela"
+            android:text="SEND"
+            android:textColor="@color/cardColor"
+            android:background="@color/jast_grey"/>
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/dsffddg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="8dp"
+    android:background="@color/cardColor"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/nkihkih"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:fontFamily="@font/varela"
+        android:text="3.1 "
+        android:textStyle="bold"
+        android:textColor="@color/darkGrey"
+        android:textSize="16dp" />
+
+
+    <TextView
+        android:id="@+id/onlinetest_single_realtestname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/nkihkih"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="12dp"
+        android:fontFamily="@font/varela"
+        android:text="Laws of motion in linear world"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="16dp" />
+
+
+    <TextView
+        android:id="@+id/sasa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_below="@+id/onlinetest_single_realtestname"
+        android:layout_alignLeft="@+id/onlinetest_single_realtestname"
+        android:fontFamily="@font/varela"
+        android:text="4 Lectures"
+        android:textStyle="bold"
+        android:textColor="@color/darkGrey"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/saaaasa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="12dp"
+      android:layout_below="@+id/onlinetest_single_realtestname"
+       android:layout_toRightOf="@id/sasa"
+        android:fontFamily="@font/varela"
+        android:text="( Jul 12 - Jul 18 )"
+        android:textStyle="bold"
+        android:textColor="@color/darkGrey"
+        android:textSize="12dp" />
+
+
+    <LinearLayout
+        android:id="@+id/main_prepare_single_recentlectures_addviewLl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/saaaasa"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical">
+
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

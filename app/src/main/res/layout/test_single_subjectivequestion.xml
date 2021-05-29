@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/enrolled_material_single_content_parentRl"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="8dp"
+    android:background="@color/cardColor">
+
+
+    <TextView
+        android:id="@+id/onlinetest_single_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/enrolled_material_single_content_tittleTv"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="0dp"
+        android:fontFamily="@font/varela"
+        android:text="Attempt any two of following"
+        android:textSize="16dp"
+        android:textColor="@color/black"/>
+
+
+    <TextView
+        android:id="@+id/yuti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/onlinetest_single_time"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="0dp"
+        android:fontFamily="@font/varela"
+        android:text="(17 questions)"
+        android:textSize="14dp"
+        android:textColor="@color/jast_grey"/>
+
+
+
+    <TextView
+        android:id="@+id/sososp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+       android:layout_alignTop="@id/onlinetest_single_time"
+        android:layout_marginRight="12dp"
+        android:fontFamily="@font/varela"
+        android:text="( 26 M )"
+        android:textColor="@color/colorPrimaryGreen"
+        android:textStyle="bold"
+        android:textSize="14dp" />
+
+
+
+    <LinearLayout
+        android:id="@+id/activity_test_addviewLl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/yuti"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical">
+
+
+
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/activity_test_addviewLl"
+        android:layout_marginTop="0dp"
+        android:background="@color/grey"/>
+
+
+
+</RelativeLayout>

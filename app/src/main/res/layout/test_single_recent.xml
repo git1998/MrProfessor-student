@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:id="@+id/single_study_deep0_practisetest_recent_rootRl"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/box_rectangle_whitefilled_greystroke">
+
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/onlinetest_tv1"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="12dp"
+        app:cardCornerRadius="23dp"
+        android:elevation="0dp"
+        app:cardElevation="0dp"
+        android:backgroundTint="@color/faintest_grey">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:padding="8dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:src="@drawable/ic_person_black_24dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/onlinetest_single_realtestname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/onlinetest_tv1"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="12dp"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/varela"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:text="Physics online test - 01"/>
+
+    <TextView
+        android:id="@+id/onlinetest_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/onlinetest_single_realtestname"
+        android:fontFamily="@font/varela"
+        android:layout_alignStart="@id/onlinetest_single_realtestname"
+        android:text="Yesterday"
+        android:textSize="12dp"
+        android:textColor="@color/jast_grey"/>
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/fragment_study_practiseOptionLl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+       android:layout_below="@id/onlinetest_text2"
+       android:layout_marginBottom="8dp"
+        android:layout_marginHorizontal="12dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="8dp"
+        android:background="@drawable/box_cornered_whitefilled_greystroke">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+           android:layout_gravity="center_vertical"
+            android:layout_weight="1">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/varela"
+                android:text="12"
+                android:textColor="@color/colorPrimaryGreen"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:id="@+id/single_study_viewpager_card_tv1"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="0dp"
+                android:textSize="12dp"
+                android:fontFamily="@font/varela"
+                android:textColor="@color/black"
+                android:text="CORRECT" />
+
+
+        </LinearLayout>
+
+
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="12dp"
+            android:background="@color/grey"/>
+
+
+
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/varela"
+                android:text="08"
+                android:textColor="@color/red"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:id="@+id/single_study_viewpager_card_tv1"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="12dp"
+                android:fontFamily="@font/varela"
+                android:textColor="@color/black"
+                android:text="WRONG" />
+
+
+        </LinearLayout>
+
+
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="12dp"
+            android:background="@color/grey"/>
+
+
+        <LinearLayout
+            android:id="@+id/fragment_study_practiseTopicsLl"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/varela"
+                android:text="20"
+                android:textColor="@color/darkGrey"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:id="@+id/single_study_viewpager_card_tv1"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="12dp"
+                android:fontFamily="@font/varela"
+                android:textColor="@color/black"
+                android:text="ATTEMPTED" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/single_study_deep0_practisetest_recent_lowerRl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/fragment_study_practiseOptionLl"
+        android:background="@color/faintest_grey">
+
+        <ImageView
+            android:id="@+id/single_study_deep0_practisetest_recent_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/ic_alarm_black_24dp"/>
+
+        <TextView
+            android:id="@+id/onlinetest_single_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/single_study_deep0_practisetest_recent_iv"
+           android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:fontFamily="@font/varela"
+            android:text="03 Topics  |  30 Ques  |  40 Mins"
+            android:textSize="11dp"
+            android:textColor="@color/jast_grey"/>
+
+
+
+        <TextView
+            android:id="@+id/onlinetest_btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingVertical="8dp"
+            android:paddingHorizontal="12dp"
+            android:textSize="12dp"
+            android:text="RESUME"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/varela"
+            android:background="@color/colorPrimaryGreen"/>
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>
+</RelativeLayout>

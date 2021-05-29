@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/single_selectfiltersubject_root"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+   android:padding="16dp"
+    android:background="@drawable/box_rectangle_whitefilled_greystroke"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+        <ImageView
+            android:id="@+id/single_selectfiltersubject_iv"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/cornered_button2"
+            android:gravity="center"
+            android:padding="4dp"
+            android:src="@drawable/upsc_logo" />
+
+
+        <TextView
+            android:id="@+id/main_single_yourcourses_courseNameTv"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/varela"
+            android:gravity="center"
+            android:text="Minglish Mantra"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/main_single_yourcourses_courseNameTv"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/varela"
+        android:gravity="center"
+        android:text="SBI PO"
+        android:textColor="@color/jast_grey"
+        android:textSize="12dp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:visibility="visible"
+        android:id="@+id/login_main_fragment_continueTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mvjci"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:paddingVertical="8dp"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:text="SELECT"
+        android:textColor="@color/cardColor"
+        android:fontFamily="@font/varela"
+        android:backgroundTint="@color/colorPrimaryGreen"
+        android:background="@drawable/box_cornered_whitefilled_green"/>
+
+
+
+    </LinearLayout>

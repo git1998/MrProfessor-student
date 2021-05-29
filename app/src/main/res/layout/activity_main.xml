@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/drawer"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.akshay.minglishmantra_beta.Activity.MainActivity"
+    android:background="@color/thodkamigrey">
+
+    <RelativeLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+            <RelativeLayout
+                android:id="@+id/poaiaa"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:background="@color/cardColor">
+
+                <ImageView
+                    android:id="@+id/activity_main_drawerIv"
+                    android:layout_height="34dp"
+                    android:layout_width="34dp"
+                    android:tint="@color/darkGrey"
+                   android:layout_centerVertical="true"
+                    android:backgroundTint="@color/jastest_grey"
+                    android:background="@drawable/ic_menu_black_24dp"/>
+
+                    <TextView
+                        android:visibility="visible"
+                        android:id="@+id/activity_main_titleTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/activity_main_drawerIv"
+                      android:layout_centerVertical="true"
+                       android:paddingBottom="2dp"
+                        android:layout_marginLeft="8dp"
+                        android:text="TutorPro"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/doppio_one"/>
+
+
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/activity_main_searchIv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp"
+                android:layout_centerVertical="true"
+                  android:layout_alignParentRight="true"
+                    android:layout_marginRight="4dp"
+                    android:tint="@color/darkGrey"
+                    android:backgroundTint="@color/jastest_grey"
+                    android:background="@drawable/ic_search_black_24dp"/>
+
+
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/activity_main_browseIv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:layout_alignParentRight="true"
+                 android:layout_centerVertical="true"
+                    android:src="@drawable/ic_search_2"
+                    android:tint="@color/jastest_grey" />
+
+
+            </RelativeLayout>
+
+
+        <View
+            android:id="@+id/paoaoa"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/poaiaa"
+            android:background="@color/grey"/>
+
+
+
+
+
+
+        <androidx.core.widget.NestedScrollView
+            android:visibility="visible"
+            android:id="@+id/activity_main_parentNestedNsv"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="50dp"
+            android:layout_below="@id/paoaoa"
+            xmlns:tools="http://schemas.android.com/tools"
+            tools:context="com.akshay.minglishmantra_beta.com.examplee.minglishmantra_beta.Activity.MainActivity">
+
+            <fragment
+                android:id="@+id/host_main"
+                android:name="androidx.navigation.fragment.NavHostFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:defaultNavHost="true"
+                app:navGraph="@navigation/main_nav" />
+
+
+        </androidx.core.widget.NestedScrollView>
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey"
+            android:layout_above="@id/bottomNavigation"/>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:visibility="visible"
+            android:id="@+id/bottomNavigation"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:menu="@menu/home_menu"
+            app:itemIconTint="@drawable/bottom_nav_icon_color_selector"
+            app:itemTextColor="@drawable/bottom_nav_text_color_selector"
+            app:labelVisibilityMode="labeled"
+            app:itemTextAppearanceActive="@style/BottomNavigationViewTextStyle"
+            app:itemTextAppearanceInactive="@style/BottomNavigationViewTextStyle"
+            android:layout_alignParentBottom="true"
+            android:background="@color/cardColor"/>
+
+
+
+    </RelativeLayout>
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/navigationView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <include
+                android:id="@+id/main_drawer_header"
+                layout="@layout/drawer_header" />
+
+        </LinearLayout>
+
+    </com.google.android.material.navigation.NavigationView>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
+

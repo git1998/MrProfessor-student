@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/cardColor"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="20dp"
+            android:paddingHorizontal="16dp">
+
+
+
+            <com.akshay.minglishmantra_beta.RecursiveRadioGroup
+                android:id="@+id/clssroom_fragment_classtests_subjectsRrg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_radiobuttons"
+                    android:layout_marginLeft="0dp"
+                    android:paddingVertical="6dp"
+                    android:paddingHorizontal="24dp"
+                    android:button="@android:color/transparent"
+                    android:checked="true"
+                    android:textSize="12dp"
+                    android:fontFamily="@font/varela"
+                    android:text="All"
+                    xmlns:android="http://schemas.android.com/apk/res/android" />
+
+
+                <RadioButton
+                    android:id="@+id/radio1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_radiobuttons"
+                    android:layout_marginLeft="12dp"
+                    android:paddingVertical="6dp"
+                    android:paddingHorizontal="24dp"
+                    android:button="@android:color/transparent"
+                    android:checked="false"
+                    android:textSize="12dp"
+                    android:fontFamily="@font/varela"
+                    android:text="Test"
+                    xmlns:android="http://schemas.android.com/apk/res/android" />
+
+                <RadioButton
+                    android:id="@+id/radio2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_radiobuttons"
+                    android:layout_marginLeft="12dp"
+                    android:paddingVertical="6dp"
+                    android:paddingHorizontal="24dp"
+                    android:button="@android:color/transparent"
+                    android:checked="false"
+                    android:textSize="12dp"
+                    android:fontFamily="@font/varela"
+                    android:text="Worksheet"
+                    xmlns:android="http://schemas.android.com/apk/res/android" />
+
+
+
+            </com.akshay.minglishmantra_beta.RecursiveRadioGroup>
+
+        </HorizontalScrollView>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="@color/grey"/>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/classroom_fragment_classtests_testRv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="12dp"
+            android:background="@color/cardColor">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>

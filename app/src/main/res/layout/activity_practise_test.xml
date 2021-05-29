@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.akshay.minglishmantra_beta.Activity.PractiseTestActivity"
+    android:background="@color/grey">
+
+    <RelativeLayout
+        android:id="@+id/fsdfsg"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/cardColor">
+
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/activity_main_drawerIv"
+            android:layout_height="32dp"
+            android:layout_width="32dp"
+            android:layout_marginLeft="12dp"
+            android:layout_centerVertical="true"
+            android:tint="@color/jastest_grey"
+            android:src="@drawable/ic_chevron_left_black_24dp"/>
+
+
+        <TextView
+            android:visibility="visible"
+            android:id="@+id/activity_detailed_titleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingBottom="4dp"
+            android:layout_toRightOf="@id/activity_main_drawerIv"
+            android:layout_marginLeft="12dp"
+            android:text="Timer feature coming soon.."
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/varela"/>
+
+
+        <ImageView
+            android:id="@+id/dsffffg"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="12dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:tint="@color/jastest_grey"
+            android:src="@drawable/ic_more_vert_black_24dp"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/grey"/>
+
+
+    </RelativeLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/fsdfsg">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/cardColor">
+
+        <TextView
+            android:id="@+id/activity_practise_test_testNameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:paddingHorizontal="12dp"
+            android:fontFamily="@font/varela"
+            android:text="Physics | Laws of motion test 1 - 04.09.2020"
+            android:textSize="16dp"
+            android:textColor="@color/black"/>
+
+
+        <TextView
+            android:id="@+id/activity_practise_test_quesMarksTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:paddingHorizontal="12dp"
+            android:layout_marginTop="0dp"
+            android:fontFamily="@font/varela"
+            android:text="10 questions | 40 marks"
+            android:textSize="16dp"
+            android:textColor="@color/black"/>
+
+
+
+        <TextView
+            android:id="@+id/activity_practise_test_timeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:paddingHorizontal="12dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/varela"
+            android:text="30 Minutes"
+            android:textSize="12dp"
+            android:textColor="@color/jastest_grey"/>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/activity_test_recyclerviewRv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+
+    </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/activity_practise_test_submitNowBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:paddingVertical="12dp"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:text="SUBMIT NOW"
+        android:textColor="@color/cardColor"
+        android:fontFamily="@font/varela"
+        android:background="@color/colorPrimaryGreen"/>
+
+
+
+
+</RelativeLayout>

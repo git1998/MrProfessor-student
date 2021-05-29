@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/faint_grey">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/cardColor">
+
+
+            <ImageView
+                android:id="@+id/drawer_profile_fragment_backIv"
+                android:layout_height="32dp"
+                android:layout_width="32dp"
+                android:layout_marginLeft="12dp"
+                android:layout_centerVertical="true"
+                android:tint="@color/jastest_grey"
+                android:src="@drawable/ic_chevron_left_black_24dp"/>
+
+
+            <TextView
+                android:visibility="visible"
+                android:id="@+id/activity_detailed_titleTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingBottom="4dp"
+                android:layout_toRightOf="@id/drawer_profile_fragment_backIv"
+                android:layout_marginLeft="12dp"
+                android:text="My Profile"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/varela"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/grey"/>
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/single_study_deep0_practisetest_recent_rootRl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="24dp"
+            android:orientation="vertical"
+            android:background="@color/cardColor">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/single_study_viewpager_card_tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:textColor="@color/jast_grey"
+                    android:fontFamily="@font/varela"
+                    android:text="ABOUT ME " />
+
+
+
+                <androidx.cardview.widget.CardView
+                android:id="@+id/onlinetest_tv1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+               android:layout_centerHorizontal="true"
+                android:layout_marginTop="0dp"
+                app:cardCornerRadius="50dp">
+
+                <ImageView
+                    android:id="@+id/drawer_profile_fragment_imageviewIv"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                   android:scaleType="centerCrop"
+                    android:src="@drawable/profile_placeholder"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+                <TextView
+                    android:id="@+id/onlinetest_single_realtestname"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/onlinetest_tv1"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="4dp"
+                    android:textColor="@android:color/black"
+                    android:fontFamily="@font/varela"
+                    android:textSize="16dp"
+                    android:text="Voucher Coins : 0"/>
+
+                <ImageView
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/onlinetest_single_realtestname"
+                    android:layout_alignRight="@id/onlinetest_single_realtestname"
+                    android:layout_marginRight="16dp"
+                    android:padding="8dp"
+                    android:layout_gravity="center"
+                    android:tint="@color/cardColor"
+                    android:src="@drawable/ic_camera_alt_black_24dp"
+                    android:backgroundTint="@color/colorPrimaryGreen"
+                    android:background="@drawable/cornered_button"/>
+
+
+
+            </RelativeLayout>
+
+
+
+            <TextView
+                android:visibility="visible"
+                android:id="@+id/onlinetest_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/varela"
+                android:text="Full name"
+                android:textSize="12dp"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/drawer_profile_fragment_fullnameEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/ic_edit_black_24dp"
+                android:drawableTint="@color/colorPrimaryGreen"
+                android:fontFamily="@font/varela"
+                android:hint="Add your full name"
+                android:text="Abhijit Bodulwar"/>
+
+
+            <TextView
+                android:visibility="visible"
+                android:id="@+id/onlinetest_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/varela"
+                android:text="Phone number"
+                android:textSize="12dp"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:enabled="false"
+                android:id="@+id/drawer_profile_fragment_mobileNoEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/varela"
+                android:drawableRight="@drawable/ic_edit_black_24dp"
+                android:drawableTint="@color/grey"
+                android:hint="Add your phone number"
+                android:text="7840982040"/>
+
+
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/onlinetest_text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/onlinetest_text2"
+                android:fontFamily="@font/varela"
+                android:layout_alignStart="@id/onlinetest_single_realtestname"
+                android:text="Om Classes , Ghatanji"
+                android:textSize="12dp"
+                android:textColor="@color/jast_grey"/>
+
+
+            <Button
+                android:visibility="gone"
+                android:id="@+id/drawer_profile_fragment_saveChangesTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:textColor="@android:color/white"
+                android:text="SAVE CHANGES"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:fontFamily="@font/varela"
+                android:background="@color/colorPrimaryGreen"/>
+
+
+        </LinearLayout>
+
+
+
+
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/cardColor"
+            android:layout_marginTop="8dp"
+            android:paddingBottom="0dp">
+
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/single_study_viewpager_card_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="14dp"
+                android:fontFamily="@font/varela"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/single_study_viewpager_card_tv2"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/single_study_viewpager_card_tv1"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="12dp"
+                android:textColor="@color/jast_grey"
+                android:fontFamily="@font/varela"
+                android:text="MY STATSTICS " />
+
+
+
+
+            <LinearLayout
+                android:id="@+id/jfgdsoi"
+                android:layout_below="@+id/single_study_viewpager_card_tv2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="8dp">
+
+
+                <TextView
+                    android:id="@+id/fragment_question_mysoubt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:paddingHorizontal="0dp"
+                    android:paddingVertical="8dp"
+                    android:layout_marginBottom="0dp"
+                    android:drawableLeft="@drawable/ic_person_black_24dp"
+                    android:drawablePadding="8dp"
+                    android:drawableTint="@color/darkGrey"
+                    android:text="Member since Oct, 2019"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:fontFamily="@font/varela"
+                    android:background="@color/cardColor"/>
+
+                <TextView
+                    android:id="@+id/fragment_question_mysoubt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:paddingHorizontal="0dp"
+                    android:paddingVertical="8dp"
+                    android:layout_marginBottom="0dp"
+                    android:drawableLeft="@drawable/ic_done_black_24dp"
+                    android:drawablePadding="8dp"
+                    android:drawableTint="@color/darkGrey"
+                    android:text="1 Doubts answered    |    0 best answers"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:fontFamily="@font/varela"
+                    android:background="@color/cardColor"/>
+
+                <TextView
+                    android:id="@+id/fragment_question_mysoubt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:paddingHorizontal="0dp"
+                    android:paddingVertical="8dp"
+                    android:layout_marginBottom="0dp"
+                    android:drawableLeft="@drawable/ic_notifications_none_black_24dp"
+                    android:drawablePadding="8dp"
+                    android:drawableTint="@color/darkGrey"
+
+                    android:text="0 Thanks Recieved"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:fontFamily="@font/varela"
+                    android:background="@color/cardColor"/>
+
+
+
+                <TextView
+                    android:id="@+id/fragment_question_mysoubt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:paddingHorizontal="0dp"
+                    android:paddingVertical="8dp"
+                    android:layout_marginBottom="0dp"
+                    android:drawableLeft="@drawable/ic_menu_black_24dp"
+                    android:drawablePadding="8dp"
+                    android:drawableTint="@color/darkGrey"
+
+                    android:text="1226 Questions answered correctly"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:fontFamily="@font/varela"
+                    android:background="@color/cardColor"/>
+
+            </LinearLayout>
+
+
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/jfgdsoi"
+                android:layout_marginTop="24dp"
+                android:background="@color/grey"></View>
+
+
+
+            <TextView
+                android:id="@+id/fragment_question_mysoubtss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view3"
+                android:layout_centerHorizontal="true"
+                android:paddingHorizontal="12dp"
+                android:paddingTop="12dp"
+                android:paddingBottom="8dp"
+                android:layout_marginBottom="0dp"
+                android:drawableRight="@drawable/ic_chevron_right_black_24dp"
+                android:drawableTint="@color/google_blue"
+                android:drawablePadding="8dp"
+                android:text="VIEW MY NOTES"
+                android:textColor="@color/google_blue"
+                android:textSize="12dp"
+                android:fontFamily="@font/varela"
+                android:background="@color/cardColor"/>
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp"
+            android:background="@color/cardColor"
+            android:padding="12dp">
+
+            <TextView
+                android:visibility="visible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/activity_main_drawerIv"
+                android:text="Your Classes"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/varela"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp">
+
+                <LinearLayout
+                    android:id="@+id/main_prepare_fragment_addviewLl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/jfgdsoi"
+                android:layout_marginTop="24dp"
+                android:background="@color/grey"></View>
+
+
+
+            <TextView
+                android:id="@+id/fragment_question_mysoubtss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_below="@id/view3"
+                android:layout_centerHorizontal="true"
+                android:paddingHorizontal="12dp"
+                android:paddingTop="12dp"
+                android:drawableRight="@drawable/ic_chevron_right_black_24dp"
+                android:drawableTint="@color/google_blue"
+                android:drawablePadding="8dp"
+                android:text="ADD CLASS"
+                android:textColor="@color/google_blue"
+                android:textSize="12dp"
+                android:fontFamily="@font/varela"
+                android:background="@color/cardColor"/>
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

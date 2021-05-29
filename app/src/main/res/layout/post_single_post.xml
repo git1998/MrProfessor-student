@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/question_single_rl"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="8dp"
+    android:layout_marginBottom="8dp"
+    android:background="@android:color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/post_single_post"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:cardCornerRadius="25dp"
+            android:layout_marginLeft="12dp"
+            android:elevation="0dp"
+            app:cardElevation="0dp">
+
+                <ImageView
+                    android:id="@+id/post_single_post_senderImageIv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/app_chetan_thakre2" />
+
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/home_single_post_postByTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/post_single_post"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="8dp"
+            android:textSize="14dp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:fontFamily="@font/varela"
+            android:text="Chetan Thakre" />
+
+        <TextView
+            android:id="@+id/home_single_post_date_posttype_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/home_single_post_postByTv"
+            android:layout_below="@id/home_single_post_postByTv"
+            android:textColor="@android:color/darker_gray"
+            android:fontFamily="@font/varela"
+            android:textSize="12dp"
+            android:text="Nov 12  .  Information share"/>
+
+
+
+
+
+        <ImageView
+            android:visibility="visible"
+            android:id="@+id/home_single_post_moreVertIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="4dp"
+            android:tint="@color/jast_grey"
+            android:src="@drawable/ic_more_vert_black_24dp"
+            />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/home_single_post_text1Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/home_single_post_date_posttype_tv"
+            android:paddingHorizontal="12dp"
+            android:layout_marginTop="12dp"
+            android:textColor="@android:color/black"
+            android:textSize="18dp"
+            android:fontFamily="@font/varela"
+            android:text="Read following questio carefully before attempt exam ."/>
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/home_single_post_imageIv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginHorizontal="12dp"
+            android:layout_below="@id/home_single_post_text1Tv"
+            android:src="@drawable/questionimage"/>
+
+
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/home_single_post_quizLl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/home_single_post_imageIv"
+            android:layout_marginTop="12dp"
+            android:paddingVertical="24dp"
+            android:background="@color/faintest_grey">
+
+
+                <ImageView
+                    android:id="@+id/home_single_post_quizLl_imageviewIv"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_alarm_black_24dp"/>
+
+
+                <TextView
+                    android:id="@+id/home_single_post_quizLl_tittleTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingHorizontal="12dp"
+                    android:layout_marginTop="0dp"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/varela"
+                    android:text="GENERAL AWARENESS"/>
+
+
+
+                <TextView
+                    android:id="@+id/home_single_post_quizLl_questions_time_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/varela"
+                    android:textColor="@color/jast_grey"
+                    android:text="10 Questions | 4 Minutes"/>
+
+                <TextView
+                    android:id="@+id/home_single_post_startquizTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingVertical="10dp"
+                    android:paddingHorizontal="12dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@id/jhhjj"
+                    android:textSize="15dp"
+                    android:text="START QUIZ"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/varela"
+                    android:background="@drawable/box_cornered_googlebluefilled"/>
+
+
+        </LinearLayout>
+
+
+
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/home_single_post_attempt_upvote_commentTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_below="@id/home_single_post_quizLl"
+            android:fontFamily="@font/varela"
+            android:textColor="@color/jast_grey"
+            android:text="2  comments"/>
+
+
+
+        <View
+            android:visibility="visible"
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/home_single_post_attempt_upvote_commentTv"
+            android:layout_marginTop="12dp"
+            android:layout_height="1dp"
+            android:background="@color/grey"></View>
+
+
+        <LinearLayout
+            android:id="@+id/aass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/view2"
+            android:paddingVertical="12dp"
+            android:paddingHorizontal="12dp">
+
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/home_single_post_upvoteTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:drawableLeft="@drawable/ic_bookmark_border_black_24dp"
+                    android:drawableTint="@color/grey"
+                    android:drawablePadding="4dp"
+                    android:textSize="12dp"
+                    android:fontFamily="@font/varela"
+                    android:textColor="@color/jast_grey"
+                    android:text="SAVE POST" />
+
+
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/home_single_post_commentTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:drawableLeft="@drawable/ic_chat_bubble_outline_black_24dp"
+                    android:drawableTint="@color/grey"
+                    android:drawablePadding="8dp"
+                    android:textSize="12dp"
+                    android:fontFamily="@font/varela"
+                    android:textColor="@color/jast_grey"
+                    android:text="COMMENT" />
+
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/home_single_post_shareTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:drawableLeft="@drawable/ic_share_black_24dp"
+                    android:drawableTint="@color/grey"
+                    android:drawablePadding="8dp"
+                    android:textSize="12dp"
+                    android:fontFamily="@font/varela"
+                    android:textColor="@color/jast_grey"
+                    android:text="SHARE" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>

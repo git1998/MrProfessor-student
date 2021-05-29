@@ -1,0 +1,715 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/grey">
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/uploaddata_fragment_scheudleLiveRl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/cardColor"
+        android:padding="20dp"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+        <TextView
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_close_black_24dp"
+            android:textSize="20dp"
+            android:text="SET 2021"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:fontFamily="@font/varela" />
+
+
+        <TextView
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="14dp"
+            android:text="Don't have coupon ? contact 7841992050"
+            android:fontFamily="@font/varela" />
+
+
+
+
+            <TextView
+                android:visibility="visible"
+                android:id="@+id/dialog_privacy_iAgreeTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="24dp"
+                android:layout_gravity="center"
+                android:paddingVertical="12dp"
+                android:paddingHorizontal="24dp"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:text="APPLY NOW"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:fontFamily="@font/varela"
+                android:background="@drawable/box_cornered_googlebluefilled"/>
+
+    </LinearLayout>
+
+
+
+
+
+
+    <LinearLayout
+        android:visibility="visible"
+        android:id="@+id/opoopoia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="0dp"
+        android:background="@color/cardColor">
+
+        <TextView
+            android:layout_weight="1"
+            android:visibility="visible"
+            android:id="@+id/browse_dialog_buycourse_tittleTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:drawableTint="@color/darkGrey"
+            android:drawablePadding="4dp"
+            android:drawableLeft="@drawable/ic_close_black_24dp"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="8dp"
+            android:fontFamily="@font/varela"
+            android:text="Buy course - MPSC Pre 12 Months"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:background="@drawable/textview_background_bottom"/>
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/single_study_deep0_practisetest_recent_rootRl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/darkGrey"
+            android:paddingVertical="12dp">
+
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/onlinetest_tv1"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="12dp"
+                android:background="@drawable/cornered_button2">
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:padding="10dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:src="@drawable/upsc_logo"/>
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/onlinetest_single_realtestname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="12dp"
+                android:textColor="@color/cardColor"
+                android:fontFamily="@font/varela"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:text="MPSC pre - 12 Months"/>
+
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/onlinetest_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/onlinetest_single_realtestname"
+                android:fontFamily="@font/varela"
+                android:layout_alignStart="@id/onlinetest_single_realtestname"
+                android:text="By Chetan thakre"
+                android:textSize="12dp"
+                android:textColor="@color/darkGrey"/>
+
+
+
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/onlinetest_text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/onlinetest_text2"
+                android:layout_alignStart="@id/onlinetest_single_realtestname"
+                android:fontFamily="@font/varela"
+                android:text="34 Students enrolled"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryGreen"/>
+
+        </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/browse_dialog_buycourse_courseInstallmentLl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:paddingTop="0dp"
+            android:paddingVertical="12dp"
+            android:paddingHorizontal="12dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:visibility="visible"
+                android:id="@+id/onlinetest_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/varela"
+                android:text="Select installment to apply coupon (*Required)"
+                android:textSize="14dp"
+                android:textColor="@color/jast_grey"/>
+
+
+
+
+            <LinearLayout
+                android:id="@+id/browse_dialog_buycourse_addViewInstallmentsTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/sis9ss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/varela"
+                android:text="Don't have coupon ? contact us"
+                android:textSize="12dp"
+                android:textColor="@color/primaryRed"/>
+
+
+
+
+
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/browse_dialog_buycourse_getCouponTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="0dp"
+                android:paddingVertical="10dp"
+                android:paddingHorizontal="12dp"
+                android:layout_marginTop="8dp"
+                android:textStyle="bold"
+                android:textSize="12dp"
+                android:text="CONTACT US"
+                android:textColor="@color/colorPrimaryGreen"
+                android:fontFamily="@font/varela"
+                android:background="@drawable/box_cornered_whitefilled_green"/>
+
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:visibility="visible"
+            android:id="@+id/browse_dialog_buycourse_redeemNowLl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="0dp">
+
+
+
+            <LinearLayout
+                android:visibility="visible"
+                android:id="@+id/browse_dialog_buycourse_contactRl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="12dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:visibility="visible"
+                    android:id="@+id/onlinetest_text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp"
+                    android:fontFamily="@font/varela"
+                    android:text="Talk to below contacts for COUPON"
+                    android:textSize="12dp"
+                    android:textColor="@color/jast_grey"/>
+
+
+
+
+                <RelativeLayout
+                    android:id="@+id/main_single_recentlectures_parentRl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:paddingHorizontal="12dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/main_single_recentlectures_cardViewCv"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        app:cardCornerRadius="25dp"
+                        android:layout_centerVertical="true"
+                        android:elevation="0dp"
+                        app:cardElevation="0dp"
+                        android:backgroundTint="@color/cardColor">
+
+                        <ImageView
+                            android:id="@+id/imageView1"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:padding="4dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:src="@drawable/whatsapplogo"/>
+
+                    </androidx.cardview.widget.CardView>
+
+
+
+                    <LinearLayout
+                        android:id="@+id/lksosoo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_centerVertical="true"
+                        android:layout_marginVertical="10dp"
+                        android:layout_toRightOf="@id/main_single_recentlectures_cardViewCv"
+                        android:layout_marginLeft="8dp">
+
+
+                        <TextView
+                            android:id="@+id/main_single_recentlectures_tittleTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginTop="0dp"
+                            android:fontFamily="@font/varela"
+                            android:text="7841989736"
+                            android:textColor="@color/black"
+                            android:textSize="16dp" />
+
+
+
+                        <TextView
+                            android:id="@+id/main_single_recentlectures_availableTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/main_single_livelectures_tittleTv"
+                            android:layout_alignStart="@id/main_single_livelectures_tittleTv"
+                            android:fontFamily="@font/varela"
+                            android:text="Admin"
+                            android:textSize="14dp"
+                            android:textColor="@color/colorPrimaryGreen"/>
+
+
+
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:visibility="gone"
+                        android:id="@+id/drawer_premium_dialog_buycourseContact1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:padding="12dp"
+                        android:layout_alignTop="@id/lksosoo"
+                        android:tint="@color/colorPrimaryGreen"
+                        android:src="@drawable/ic_phone_in_talk_black_24dp"/>
+
+
+                    <View
+                        android:visibility="gone"
+                        android:id="@+id/main_single_recentlectures_viewV"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@id/lksosoo"
+                        android:background="@color/faint_grey"/>
+
+
+
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:id="@+id/main_single_recentlectures_parentRl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:paddingHorizontal="12dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/main_single_recentlectures_cardViewCv"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        app:cardCornerRadius="25dp"
+                        android:layout_centerVertical="true"
+                        android:elevation="0dp"
+                        app:cardElevation="0dp"
+                        android:backgroundTint="@color/cardColor">
+
+                        <ImageView
+                            android:id="@+id/imageView1"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:padding="4dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:src="@drawable/whatsapplogo"/>
+
+                    </androidx.cardview.widget.CardView>
+
+
+
+                    <LinearLayout
+                        android:id="@+id/lksosoo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_centerVertical="true"
+                        android:layout_marginVertical="10dp"
+                        android:layout_toRightOf="@id/main_single_recentlectures_cardViewCv"
+                        android:layout_marginLeft="8dp">
+
+
+                        <TextView
+                            android:id="@+id/main_single_recentlectures_tittleTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginTop="0dp"
+                            android:fontFamily="@font/varela"
+                            android:text="7841992050"
+                            android:textColor="@color/black"
+                            android:textSize="16dp" />
+
+
+
+                        <TextView
+                            android:id="@+id/main_single_recentlectures_availableTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/main_single_livelectures_tittleTv"
+                            android:layout_alignStart="@id/main_single_livelectures_tittleTv"
+                            android:fontFamily="@font/varela"
+                            android:text="Admin"
+                            android:textSize="14dp"
+                            android:textColor="@color/colorPrimaryGreen"/>
+
+
+
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:visibility="gone"
+                        android:id="@+id/main_single_recentlectures_chevRightIv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:padding="12dp"
+                        android:layout_alignTop="@id/lksosoo"
+                        android:tint="@color/colorPrimaryGreen"
+                        android:src="@drawable/ic_phone_in_talk_black_24dp"/>
+
+
+                    <View
+                        android:visibility="gone"
+                        android:id="@+id/main_single_recentlectures_viewV"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@id/lksosoo"
+                        android:background="@color/faint_grey"/>
+
+
+
+                </RelativeLayout>
+
+
+
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/browse_dialog_single_installment_parentRl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:padding="12dp"
+                android:orientation="horizontal"
+                android:background="@drawable/box_cornered_whitefilled_greystroke">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:visibility="visible"
+                    android:id="@+id/browse_dialog_single_installments_monthTv"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/varela"
+                    android:text="4 Months"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"/>
+
+
+                <TextView
+                    android:layout_weight="1"
+                    android:visibility="visible"
+                    android:id="@+id/browse_dialog_single_installments_OfferTv"
+                    android:layout_width="70dp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="0dp"
+                    android:layout_toRightOf="@+id/browse_dialog_single_installments_monthTv"
+                    android:paddingHorizontal="4dp"
+                    android:fontFamily="@font/doppio_one"
+                    android:text="10% OFF"
+                    android:textSize="12dp"
+                    android:textStyle="italic"
+                    android:textColor="@color/cardColor"
+                    android:backgroundTint="@color/faint_red"
+                    android:background="@drawable/box_cornered_googlebluefilled"/>
+
+                <TextView
+                    android:visibility="visible"
+                    android:id="@+id/browse_dialog_single_installments_savedMoneyTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:fontFamily="@font/varela"
+                    android:text="SAVE Rs.00.00"
+                    android:textSize="12dp"
+                    android:textColor="@color/primaryRed"/>
+
+
+                <TextView
+                    android:visibility="visible"
+                    android:id="@+id/browse_dialog_single_installments_AmountPerMonthTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/browse_dialog_single_installments_savedMoneyTv"
+                    android:layout_alignParentRight="true"
+                    android:fontFamily="@font/varela"
+                    android:text="Rs.10,000 / MONTH"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:visibility="visible"
+                    android:id="@+id/browse_dialog_single_installments_totalFeesTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/browse_dialog_single_installments_AmountPerMonthTv"
+                    android:layout_alignParentRight="true"
+                    android:fontFamily="@font/varela"
+                    android:text="TOTAL FEES : Rs. 30,0000"
+                    android:textSize="12dp"
+                    android:textColor="@color/darkGrey"/>
+
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:visibility="visible"
+                android:id="@+id/browse_dialog_buycourse_errorTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/opoopoia"
+                android:layout_gravity="center"
+                android:textSize="12dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/varela"
+                android:textColor="@color/jast_grey"
+                android:text="" />
+
+
+
+            <EditText
+                android:visibility="visible"
+                android:id="@+id/browse_dialog_buycourse_edittextEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="12dp"
+                android:paddingHorizontal="0dp"
+                android:paddingVertical="12dp"
+                android:gravity="center"
+                android:fontFamily="@font/varela"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:hint="Enter coupon here"
+                android:textColorHint="@color/grey"
+                android:textStyle="bold"
+                android:background="@drawable/box_rectangle_whitefilled_greystroke"/>
+
+
+            <View
+                android:visibility="visible"
+                android:id="@+id/mvjci"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="12dp"
+                android:layout_marginHorizontal="12dp"
+                android:layout_above="@+id/browse_dialog_buycourse_applynowTv"
+                android:background="@color/grey"
+                />
+
+
+
+            <TextView
+                android:layout_weight="1"
+                android:visibility="visible"
+                android:id="@+id/dmffd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:layout_below="@id/onlinetest_text2"
+                android:fontFamily="@font/varela"
+                android:text="By clicking on APPLY COUPON , you can access to content of course"
+                android:textSize="12dp"
+                android:textColor="@color/jast_grey"/>
+
+
+
+
+            <TextView
+                android:visibility="visible"
+                android:id="@+id/browse_dialog_buycourse_applynowTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginHorizontal="12dp"
+                android:paddingVertical="12dp"
+                android:paddingHorizontal="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="24dp"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:text="APPLY COUPON"
+                android:textColor="@color/cardColor"
+                android:fontFamily="@font/varela"
+                android:backgroundTint="@color/colorPrimaryGreen"
+                android:background="@drawable/box_cornered_whitefilled_green"/>
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/browse_dialog_buycourse_applynowTv"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/joj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="12dp"
+            android:layout_marginTop="4dp"
+            android:paddingRight="8dp"
+            android:fontFamily="@font/varela"
+            android:textColor="@color/jast_grey"
+            android:text="Contact us for coupon"
+            android:background="@drawable/textview_background_right"/>
+
+        <TextView
+            android:id="@+id/joj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="4dp"
+            android:textSize="12dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/varela"
+            android:textColor="@color/colorPrimaryGreen"
+            android:textStyle="bold"
+            android:text="+91 7887610065"
+            android:background="@drawable/textview_background_bottom"/>
+
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/cardColor">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="24dp">
+
+
+
+        <androidx.cardview.widget.CardView
+            android:visibility="visible"
+            android:id="@+id/fdsgfdg"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginBottom="12dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/fsvks"
+            app:cardCornerRadius="70dp">
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:padding="20dp"
+                android:background="@drawable/realapplogo"/>
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/dmbsajdbsa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fdsgfdg"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:textSize="18dp"
+            android:fontFamily="@font/varela"
+            android:textStyle="bold"
+            android:textColor="@color/darkGrey"
+            android:text="Welcome to Mr.Professor App" />
+
+
+
+        <TextView
+            android:id="@+id/dsafsd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dmbsajdbsa"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:textSize="14dp"
+            android:fontFamily="@font/varela"
+            android:textColor="@color/darkGrey"
+            android:text="App version V1.0.0" />
+
+
+
+        <TextView
+            android:id="@+id/fbnsbdf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dsafsd"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:textSize="14dp"
+            android:fontFamily="@font/varela"
+            android:textColor="@color/darkGrey"
+            android:text="from" />
+
+
+
+        <TextView
+            android:id="@+id/fdbjfd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fbnsbdf"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:textSize="16dp"
+            android:fontFamily="@font/mo_re"
+            android:textColor="@color/colorPrimaryGreen"
+            android:text="Mr.Profesor" />
+
+        <RelativeLayout
+            android:id="@+id/dksnfkn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true">
+
+
+            <TextView
+                android:id="@+id/dsanfds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:text="+91"
+                android:textColor="@color/black"
+                android:fontFamily="@font/varela"
+                android:textSize="16sp"
+                />
+
+            <View
+                android:id="@+id/dfssf"
+                android:layout_width="1dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@id/dsanfds"
+                android:background="@color/grey" />
+
+
+            <EditText
+                android:id="@+id/login_main_fragment_mobileNoEt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:inputType="number"
+                android:hint="Enter your mobile number"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:fontFamily="@font/varela"
+                android:background="@android:color/transparent"/>
+
+
+            <View
+                android:id="@+id/fsknfsk"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/login_main_fragment_mobileNoEt"
+                android:layout_marginTop="8dp"
+                android:background="@color/grey"/>
+
+
+            <TextView
+                android:visibility="visible"
+                android:id="@+id/login_main_fragment_continueTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fsknfsk"
+                android:layout_marginTop="12dp"
+                android:gravity="center"
+                android:paddingVertical="8dp"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:text="CONTINUE"
+                android:textColor="@color/cardColor"
+                android:fontFamily="@font/varela"
+                android:backgroundTint="@color/colorPrimaryGreen"
+                android:background="@drawable/cornered_button"/>
+
+
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/ddfsfds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/login_main_fragment_continueTv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="0dp"
+                android:textSize="14dp"
+                android:fontFamily="@font/varela"
+                android:textColor="@color/darkGrey"
+                android:text="Trouble in continue ?" />
+
+
+
+
+            <TextView
+                android:id="@+id/dasdfdadssa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/login_main_fragment_continueTv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:textSize="14dp"
+                android:fontFamily="@font/varela"
+                android:textColor="@color/darkGrey"
+                android:text="By continuing to Mr.Professor App you agree to our" />
+
+
+            <TextView
+                android:id="@+id/login_main_fragment_termsPolicyTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dasdfdadssa"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="0dp"
+                android:textSize="16dp"
+                android:fontFamily="@font/varela"
+                android:textColor="@color/colorPrimaryGreen"
+                android:text="Terms and Policy"
+                android:background="@drawable/textview_background_bottom"/>
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="32dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@color/colorPrimaryGreen">
+
+
+        </RelativeLayout>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/dfsafnds"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="24dp"
+          android:layout_centerHorizontal="true"
+            app:cardCornerRadius="60dp"
+            android:elevation="12dp"
+            app:cardElevation="12dp">
+
+
+            <ImageView
+                android:visibility="visible"
+                android:id="@+id/fdsknfkds"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:padding="22dp"
+                android:src="@drawable/spash_rocket"
+                android:background="@color/cardColor"/>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/record_student_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="24dp"
+         android:layout_below="@+id/dfsafnds"
+            android:layout_marginHorizontal="24dp"
+            app:cardCornerRadius="12dp"
+            android:elevation="12dp"
+            app:cardElevation="12dp">
+
+        <LinearLayout
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/fdsknfkds"
+            android:layout_margin="12dp"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="16dp"
+            android:background="@color/cardColor">
+
+            <TextView
+                android:id="@+id/slogan_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SIGN IN / LOG IN"
+                android:textColor="@color/colorPrimaryGreen"
+                android:fontFamily="@font/varela"
+                android:textSize="20sp"/>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/activity_login_mobile"
+                android:layout_marginTop="12dp"
+                android:layout_below="@+id/slogan_name"
+                android:hint="Mobile Number"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    android:fontFamily="@font/varela"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/activity_login_name"
+                android:layout_marginTop="12dp"
+                android:layout_below="@+id/slogan_name"
+                android:hint="Name"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/login_main_fragment_nameEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/varela"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/activity_login_instituecode"
+                android:layout_marginTop="12dp"
+                android:layout_below="@+id/slogan_name"
+                android:hint="Code"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/varela"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/aapoo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+            android:layout_marginTop="12dp"
+                android:layout_marginRight="8dp"
+                android:drawablePadding="12dp"
+                android:fontFamily="@font/varela"
+                android:text="Need help?"
+                android:layout_above="@+id/paoa"
+                android:textColor="@color/jastest_grey"
+                android:textSize="16dp"
+                />
+
+
+
+
+            <TextView
+                android:visibility="visible"
+                android:id="@+id/gsfdfd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mvjci"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:paddingVertical="16dp"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:text="CONTINUE"
+                android:textColor="@color/cardColor"
+                android:fontFamily="@font/varela"
+                android:backgroundTint="@color/colorPrimaryGreen"
+                android:background="@drawable/box_cornered_googlebluefilled"/>
+
+        </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

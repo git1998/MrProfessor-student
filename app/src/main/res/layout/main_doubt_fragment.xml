@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="16dp"
+        android:paddingHorizontal="12dp"
+        android:background="@color/cardColor">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/onlinetest_tv1"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            app:cardCornerRadius="27dp"
+            android:layout_centerVertical="true"
+            android:elevation="0dp"
+            app:cardElevation="0dp"
+            android:backgroundTint="@color/faint_google_blue">
+
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:padding="12dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:src="@drawable/askmenu_doubt" />
+
+        </androidx.cardview.widget.CardView>
+
+
+
+        <LinearLayout
+            android:id="@+id/main_doubt_fragment_askDoubtLl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/onlinetest_tv1"
+            android:layout_toLeftOf="@+id/ndjdkj"
+            android:layout_centerVertical="true"
+            android:paddingBottom="20dp"
+            android:paddingTop="12dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="12dp"
+            android:paddingHorizontal="12dp"
+            android:orientation="vertical"
+            android:background="@drawable/cornered_button"
+            android:backgroundTint="@color/faint_grey">
+
+
+            <TextView
+                android:id="@+id/activity_drawer_title_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:text="Hey there, want to ask a doubt"
+                android:textSize="12dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/varela"/>
+
+
+            <TextView
+                android:id="@+id/activity_drawer_title_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:text="Start typing here..."
+                android:textSize="10dp"
+                android:textColor="@color/jast_grey"
+                android:fontFamily="@font/varela"
+                android:background="@android:color/transparent"/>
+
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/ndjdkj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:drawableTop="@drawable/ic_camera_alt_black_24dp"
+            android:text="Add image"
+            android:drawableTint="@color/jastest_grey"
+            android:textSize="10dp"/>
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:visibility="visible"
+        android:id="@+id/fragment_question_rl1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:orientation="vertical"
+        android:background="@color/faint_grey">
+
+
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/fragment_question_filteTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="12dp"
+            android:textSize="12dp"
+            android:fontFamily="@font/varela"
+            android:textColor="@color/jastest_grey"
+            android:text="SEARCH BY COURSE" />
+
+
+
+        <HorizontalScrollView
+            android:visibility="gone"
+            android:id="@+id/fdsb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fragment_question_filteTv">
+
+            <LinearLayout
+                android:id="@+id/fragment_question_addSubjectRootLinear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="12dp"
+                android:paddingHorizontal="12dp">
+
+
+
+
+            </LinearLayout>
+
+
+
+        </HorizontalScrollView>
+
+
+        <TextView
+            android:id="@+id/main_doubt_fragment_filterByCourseTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="4dp"
+            android:gravity="center_vertical"
+            android:drawableTint="@color/darkGrey"
+            android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+            android:fontFamily="@font/varela"
+            android:text="Tap to filter posts"
+            android:textColor="@color/black"
+            android:textSize="14dp" />
+
+
+        <View
+            android:visibility="visible"
+            android:id="@+id/fdjdkifd"
+            android:layout_below="@+id/fdsb"
+            android:layout_width="match_parent"
+            android:layout_marginTop="0dp"
+            android:layout_height="1dp"
+            android:background="@color/grey"/>
+
+
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/main_doubt_fragment_filterBySubjectTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="4dp"
+            android:gravity="center_vertical"
+            android:drawableTint="@color/black"
+            android:drawableRight="@drawable/ic_chevron_right_black_24dp"
+            android:fontFamily="@font/varela"
+            android:text="Choose Subject : All"
+            android:textColor="@color/black"
+            android:textSize="14dp" />
+
+
+        <View
+            android:visibility="visible"
+            android:id="@+id/fdjdkifd"
+            android:layout_below="@+id/fdsb"
+            android:layout_width="match_parent"
+            android:layout_marginTop="0dp"
+            android:layout_height="1dp"
+            android:background="@color/faint_grey"/>
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/main_doubt_fragment_loadingTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingVertical="10dp"
+        android:layout_marginBottom="0dp"
+        android:text="Loading..."
+        android:textColor="@color/darkGrey"
+        android:textSize="14dp"
+        android:fontFamily="@font/varela" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/main_doubt_fragment_doubtRv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="0dp"/>
+
+
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>

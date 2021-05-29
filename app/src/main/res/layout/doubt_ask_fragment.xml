@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/faintest_grey">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/dialog_postask_cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cardColor"
+        app:cardElevation="4dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/doubt_ask_fragment_backIv"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:src="@drawable/ic_chevron_left_black_24dp"
+                android:tint="@color/jast_grey"/>
+
+            <TextView
+                android:id="@+id/dialog_postask_nameTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@+id/single_selectfiltersubject_cv"
+                android:fontFamily="@font/varela"
+                android:textColor="@color/black"
+                android:text="Abhijit Bodulwar"/>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/single_selectfiltersubject_cv"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_toRightOf="@+id/doubt_ask_fragment_backIv"
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="12dp"
+                app:cardCornerRadius="20dp"
+                android:backgroundTint="@color/google_blue">
+
+                <TextView
+                    android:id="@+id/single_selectfiltersubject_iv"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="A"
+                    android:textSize="24dp"
+                    android:textColor="@color/cardColor"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginBottom="2dp"
+                android:layout_below="@+id/dialog_postask_nameTv"
+                android:layout_toRightOf="@+id/single_selectfiltersubject_cv"
+                android:fontFamily="@font/varela"
+                android:text="Now"/>
+
+
+            <TextView
+                android:id="@+id/dialog_postask_uploadQuestionTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:paddingHorizontal="24dp"
+                android:paddingVertical="18dp"
+                android:fontFamily="@font/varela"
+                android:text="NEXT"
+                android:textColor="@color/cardColor"
+                android:background="@color/jast_grey"/>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+    <EditText
+        android:id="@+id/dialog_postask_questionTextEt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="20dp"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/dialog_postask_cardview"
+        android:fontFamily="@font/varela"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        android:textColorHint="@color/jast_grey"
+        android:hint="Type out your question &amp; your fellow gradians will soon hlep you out"
+        android:background="@android:color/transparent"/>
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/main_upload_fragment_imageRelativeRl"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginHorizontal="12dp"
+        android:layout_below="@+id/dialog_postask_questionTextEt"
+        android:background="@color/cardColor">
+
+        <ImageView
+            android:id="@+id/main_upload_fragment_uploadImageIv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true" />
+
+        <ImageView
+            android:id="@+id/fragment_upload_notice_imageUploadIv"
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_alignParentRight="true"
+            android:tint="@color/darkGrey"
+            android:src="@drawable/ic_close_black_24dp"/>
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/main_doubt_deep0_fragment_addImageLl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/box_cornered_whitefilled_green">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:drawableLeft="@drawable/ic_camera_alt_black_24dp"
+            android:drawableTint="@color/google_blue"
+            android:drawablePadding="12dp"
+            android:paddingVertical="12dp"
+            android:fontFamily="@font/varela"
+            android:textSize="14dp"
+            android:text="ADD IMAGE"
+            android:textColor="@color/google_blue" />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

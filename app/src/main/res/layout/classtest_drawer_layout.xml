@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+
+    <GridLayout
+        android:id="@+id/drawer_onlinetest_layout_gridlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"
+        android:layout_above="@id/drawer_onlinetest_layout_submitnow"
+        android:columnCount="5"
+        android:rowCount="10"/>
+
+
+
+
+
+    <Button
+        android:id="@+id/drawer_onlinetest_layout_submitnow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textColor="@android:color/white"
+        android:text="submit test"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:fontFamily="@font/varela"
+        android:background="@color/colorPrimaryGreen"/>
+
+</RelativeLayout>

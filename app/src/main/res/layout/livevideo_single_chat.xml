@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/onlinetest_tv1"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        app:cardCornerRadius="12dp">
+
+        <ImageView
+            android:id="@+id/livevideo_single_chat_imageIv"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:src="@drawable/profile_placeholder"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/video_single_nameTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@id/onlinetest_tv1"
+        android:fontFamily="@font/varela"
+        android:text="Abhijit bodulwar"
+        android:textColor="@color/jast_grey"
+        android:textSize="13dp" />
+
+
+    <TextView
+        android:id="@+id/video_single_timeTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@id/video_single_nameTv"
+        android:fontFamily="@font/varela"
+        android:text="05:25"
+        android:textColor="@color/jast_grey"
+        android:textSize="13dp" />
+
+
+    <TextView
+        android:id="@+id/video_single_doubtTextTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@id/video_single_timeTv"
+        android:fontFamily="@font/varela"
+        android:text="Please explain again sir ? "
+        android:textColor="@color/black"
+        android:textSize="13dp" />
+
+
+</RelativeLayout>

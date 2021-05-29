@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp"
+    android:layout_marginTop="12dp"
+    android:background="@drawable/box_cornered_whitefilled_greystroke">
+
+
+        <ImageView
+            android:id="@+id/single_selectfiltersubject_iv"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/cornered_button2"
+            android:gravity="center"
+            android:padding="4dp"
+            android:src="@drawable/realapplogo" />
+
+
+        <TextView
+            android:id="@+id/browse_single_course_courseNameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/varela"
+            android:gravity="center"
+            android:text="SBI PO"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:id="@+id/browse_single_course_freeTrialLl"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/browse_single_course_freeTrialEndsInTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:textSize="12dp"
+            android:fontFamily="@font/varela"
+            android:textColor="@color/primaryRed"
+            android:text="Free Trial ends in" />
+
+
+
+        <LinearLayout
+            android:id="@+id/fdsffrg"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true">
+
+
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/browse_single_course_daysTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:fontFamily="@font/varela"
+                android:textColor="@color/black"
+                android:text="02" />
+
+
+
+            <TextView
+                android:visibility="gone"
+                android:layout_weight="1"
+                android:id="@+id/browse_single_course_hrsTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:fontFamily="@font/varela"
+                android:textColor="@color/black"
+                android:text="11" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/aass"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true">
+
+
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/joj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="12dp"
+                android:fontFamily="@font/varela"
+                android:textColor="@color/jast_grey"
+                android:text="days" />
+
+
+
+            <TextView
+                android:visibility="gone"
+                android:layout_weight="1"
+                android:id="@+id/joj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="12dp"
+                android:fontFamily="@font/varela"
+                android:textColor="@color/jast_grey"
+                android:text="hrs" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+        <TextView
+            android:visibility="visible"
+            android:id="@+id/browse_single_course_buyCourseTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+          android:layout_margin="12dp"
+            android:paddingVertical="8dp"
+            android:paddingHorizontal="20dp"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:text="BUY COURSE"
+            android:textColor="@color/colorPrimaryGreen"
+            android:fontFamily="@font/varela"
+            android:backgroundTint="@color/colorPrimaryGreen"
+            android:background="@drawable/cornered_button2"/>
+
+
+
+        <TextView
+            android:visibility="visible"
+            android:id="@+id/browse_single_course_freeTrialTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginBottom="0dp"
+            android:paddingVertical="8dp"
+            android:paddingHorizontal="12dp"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:text="START 10-DAY FREE TRIAL"
+            android:textColor="@color/cardColor"
+            android:fontFamily="@font/varela"
+            android:backgroundTint="@color/colorPrimaryGreen"
+            android:background="@drawable/cornered_button"/>
+
+
+    </LinearLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/cardColor"
+    android:padding="12dp"
+    android:layout_marginBottom="8dp">
+
+
+    <TextView
+        android:visibility="visible"
+        android:id="@+id/dalnfsf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_check_circle_black_24dp"
+        android:drawableTint="@color/colorPrimaryGreen"
+        android:drawablePadding="4dp"
+        android:text="Redeem sucessed"
+        android:textSize="16dp"
+        android:textColor="@color/colorPrimaryGreen"
+        android:fontFamily="@font/varela"/>
+
+    <TextView
+        android:visibility="visible"
+        android:id="@+id/dksafsf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dalnfsf"
+        android:layout_marginTop="4dp"
+        android:text="Minglish Mantra MPSC 2020 (English) (Batch 1)"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/varela"/>
+
+
+    <TextView
+        android:visibility="visible"
+        android:id="@+id/mcxmzcz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dksafsf"
+        android:text="Coupon code : hdw8afy7sfbsb"
+        android:textSize="14dp"
+        android:textColor="@color/jast_grey"
+        android:fontFamily="@font/varela"/>
+
+
+    <TextView
+        android:visibility="visible"
+        android:id="@+id/activity_detailed_titleTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mcxmzcz"
+        android:text="Wed,23 Sep 2020"
+        android:textSize="14dp"
+        android:textColor="@color/jast_grey"
+        android:fontFamily="@font/varela"/>
+
+
+    <TextView
+        android:visibility="visible"
+        android:id="@+id/dsaff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="Rs.1,999/-"
+        android:textSize="16dp"
+        android:textColor="@color/jast_grey"
+        android:fontFamily="@font/varela"/>
+
+
+    <TextView
+        android:id="@+id/drawer_header_viewProfileTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_detailed_titleTv"
+        android:paddingHorizontal="28dp"
+        android:paddingVertical="8dp"
+        android:textSize="14dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/varela"
+        android:textColor="@color/colorPrimaryGreen"
+        android:text="REFRESH"
+        android:background="@drawable/box_rectangle_whitefilled_greenstroke"/>
+
+
+
+</RelativeLayout>

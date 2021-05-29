@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/faint_grey">
+
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cardColor">
+
+
+        <ImageView
+            android:id="@+id/dialog_postask_closeIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+           android:padding="12dp"
+            android:src="@drawable/ic_chevron_left_black_24dp"
+            android:tint="@color/jast_grey"/>
+
+        <TextView
+            android:id="@+id/dialog_postask_nameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/dialog_postask_closeIv"
+            android:fontFamily="@font/varela"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="3. Physics"/>
+
+
+
+    </RelativeLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/mdidudii"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/mjftyy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/cardColor"
+                android:paddingBottom="8dp">
+
+                <com.google.android.youtube.player.YouTubePlayerView
+                    android:id="@+id/player_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"/>
+
+                <TextView
+                    android:id="@+id/onlinetest_single_realtestname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/player_view"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="12dp"
+                    android:fontFamily="@font/varela"
+                    android:text="Newton's laws of motion"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="18dp" />
+
+
+                <TextView
+                    android:id="@+id/yuyu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/onlinetest_single_realtestname"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginLeft="12dp"
+                    android:fontFamily="@font/varela"
+                    android:text="Basic primer on Newton's First Law of motion"
+                    android:textColor="@color/darkGrey"
+                    android:textSize="14dp" />
+
+
+                <View
+                    android:id="@+id/mcjcxids"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/yuyu"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/grey"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@id/mcjcxids"
+                    android:layout_marginTop="8dp">
+
+                    <TextView
+                        android:id="@+id/yuyu"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableTop="@drawable/ic_bookmark_border_black_24dp"
+                        android:drawableTint="@color/jastest_grey"
+                        android:fontFamily="@font/varela"
+                        android:gravity="center"
+                        android:text="Bookmark"
+                        android:textColor="@color/darkGrey"
+                        android:textStyle="bold"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/yuyu"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableTop="@drawable/ic_find_in_page_black_24dp"
+                        android:drawableTint="@color/jastest_grey"
+                        android:fontFamily="@font/varela"
+                        android:gravity="center"
+                        android:text="Notes"
+                        android:textColor="@color/darkGrey"
+                        android:textStyle="bold"
+                        android:textSize="12dp" />
+
+
+                    <TextView
+                        android:id="@+id/yuyu"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableTop="@drawable/ic_cloud_download_black_24dp"
+                        android:drawableTint="@color/jastest_grey"
+                        android:fontFamily="@font/varela"
+                        android:gravity="center"
+                        android:text="Download"
+                        android:textColor="@color/darkGrey"
+                        android:textStyle="bold"
+                        android:textSize="12dp" />
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_below="@id/mjftyy"
+                android:layout_marginTop="8dp">
+
+                <View
+                    android:visibility="visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@color/grey"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:visibility="visible"
+                    android:id="@+id/main_prepare_fragment_RecentSessionsRv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="0dp"
+                    android:padding="12dp"
+                    android:background="@color/cardColor"/>
+
+
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+
+</LinearLayout>

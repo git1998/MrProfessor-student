@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="12dp"
+    android:background="@color/cardColor">
+
+    <ImageView
+        android:visibility="invisible"
+        android:id="@+id/makaiooopospp"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/iooopo"
+
+        android:src="@drawable/chetan_enroll"/>
+
+
+    <TextView
+        android:id="@+id/iooopo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/makapp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/varela"
+        android:text="Profile info"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        />
+
+
+    <TextView
+        android:id="@+id/ioosopo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iooopo"
+        android:layout_toLeftOf="@id/makaiooopospp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/varela"
+        android:text="Please provide your name and an optional photo"
+        android:textColor="@color/darkGrey"
+        android:textSize="14dp"
+        />
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/dfsafnds"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/ioosopo"
+        android:layout_centerHorizontal="true"
+        app:cardCornerRadius="50dp">
+
+
+        <ImageView
+            android:visibility="visible"
+            android:id="@+id/login_profile_fragment_imageIv"
+            android:layout_below="@+id/ioosopo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/profile_placeholder"/>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <EditText
+        android:id="@+id/login_profile_fragment_nameEt"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dfsafnds"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:paddingHorizontal="12dp"
+        android:fontFamily="@font/varela"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:hint="Type your name here"
+        android:textColorHint="@color/grey"
+        android:textStyle="bold" />
+
+
+        <TextView
+            android:visibility="visible"
+            android:id="@+id/login_profile_fragment_nextTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="12dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:text="NEXT"
+            android:textColor="@color/cardColor"
+            android:fontFamily="@font/varela"
+            android:background="@color/colorPrimaryGreen"/>
+
+</RelativeLayout>

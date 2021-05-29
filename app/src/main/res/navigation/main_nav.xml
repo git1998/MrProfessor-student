@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/mainHomeFragment">
+
+    <fragment
+        android:id="@+id/mainLiveFragment"
+        android:name="com.akshay.minglishmantra_beta.Fragment.MainLiveFragment"
+        android:label="main_live_fragment"
+        tools:layout="@layout/main_live_fragment" />
+    <fragment
+        android:id="@+id/mainPrepareFragment"
+        android:name="com.akshay.minglishmantra_beta.Fragment.MainPrepareFragment"
+        android:label="main_prepare_fragment"
+        tools:layout="@layout/main_prepare_fragment" />
+    <fragment
+        android:id="@+id/mainTestFragment"
+        android:name="com.akshay.minglishmantra_beta.Fragment.MainTestFragment"
+        android:label="MainTestFragment"
+        tools:layout="@layout/main_test_fragment"/>
+    <fragment
+        android:id="@+id/mainPostFragment"
+        android:name="com.akshay.minglishmantra_beta.Fragment.MainDoubtFragment"
+        android:label="main_post_fragment"
+        tools:layout="@layout/main_doubt_fragment" />
+    <fragment
+        android:id="@+id/mainHomeFragment"
+        android:name="com.akshay.minglishmantra_beta.Fragment.MainPostFragment"
+        android:label="main_home_fragment"
+        tools:layout="@layout/main_home_fragment" />
+</navigation>

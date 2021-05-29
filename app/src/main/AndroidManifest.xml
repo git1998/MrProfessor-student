@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.akshay.minglishmantra_beta">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:name="com.akshay.minglishmantra_beta.ApplicationClass"
+        android:allowBackup="true"
+        android:icon="@drawable/realapplogo"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        tools:replace="android:supportsRtl"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.akshay.minglishmantra_beta.Activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.akshay.minglishmantra_beta.Activity.ClassTestActivity" />
+        <activity android:name="com.akshay.minglishmantra_beta.Activity.MainDetailedActivity" />
+        <activity android:name="com.akshay.minglishmantra_beta.Activity.DrawerActivity" />
+        <activity android:name="com.akshay.minglishmantra_beta.Activity.PractiseTestActivity" />
+        <activity android:name="com.akshay.minglishmantra_beta.Activity.ClassroomActivity" />
+        <activity android:name="com.akshay.minglishmantra_beta.Activity.MaterialVideoActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            />
+        <activity android:name="com.akshay.minglishmantra_beta.Activity.LoginActivity" />
+        <activity android:name="com.akshay.minglishmantra_beta.Activity.LiveVideoActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            />
+        <activity android:name="com.akshay.minglishmantra_beta.Activity.DetailedActivity" />
+        <activity android:name="com.akshay.minglishmantra_beta.Activity.MainActivity"></activity>
+    </application>
+
+</manifest>

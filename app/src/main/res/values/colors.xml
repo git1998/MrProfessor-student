@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#ffff</color>
+    <color name="colorPrimaryBlue">#327451</color>
+    <color name="colorPrimaryGreen">#2ECC71</color>
+    <color name="colorPrimaryBlueFaint">#D7EEDD</color>
+    <color name="GreenDarkColor">#014421</color>
+    <color name="colorPrimaryFaintBlue">#E9F8EE</color>
+    <color name="colorAccent">#713002</color>
+    <color name="grey">#DBD9D8</color>
+    <color name="thodkamigrey">#E6E4E4</color>
+    <color name="jast_grey">#B1AFAF</color>
+    <color name="jastest_grey">#979595</color>
+    <color name="faint_grey">#F0EFED</color>
+    <color name="faintest_grey">#F8F7F7</color>
+
+
+    <color name="faint_red">#EB6A68</color>
+    <color name="faintest_red">#F5C2C0</color>
+
+    <color name="google_blue"> #2ECC71</color>
+    <color name="dark_google_blue">#042769</color>
+    <color name="faint_google_blue">#DDE3F3</color>
+    <color name="faintest_google_blue">#ECEEF5</color>
+
+
+    <color name="color_alizarin">#e74c3c</color>
+
+    <color name="orange">#fa9c03</color>
+
+    <color name="faint_primary">#B9DDE7</color>
+    <color name="faint_blue">#C7CCEB</color>
+    <color name="faint_yellow">#EBDDC7</color>
+    <color name="green">#01b417</color>
+    <color name="red">#fa180c</color>
+    <color name="primaryRed">#E74C3C</color>
+    <color name="primaryYellow">#F1C40F</color>
+    <color name="cardColor">#ffffff</color>
+    <color name="faint_cardColor">#E9E2E2</color>
+    <color name="faint_darkGrey">#DAD8D8</color>
+    <color name="darkGrey">#656565</color>
+    <color name="black">#000000</color>
+    <color name="textCardColor">#3f3f3f</color>
+
+
+    <!-- colors for button style -->
+
+    <color name="gradient_start_color">#4c84ff</color>
+    <color name="gradient_end_color">#18a3fe</color>
+
+
+    <!-- colors for tab and screent text -->
+
+    <color name="tab_indicator_gray">#c0c0c0</color>
+    <color name="intro_title_color">#000000</color>
+
+    <color name="intro_description_color">#656565</color>
+</resources>
+

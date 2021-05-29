@@ -1,0 +1,166 @@
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/grey">
+
+
+
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:id="@+id/player_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <RelativeLayout
+        android:id="@+id/activity_material_video_relative1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cardColor"
+        android:layout_below="@+id/player_view"
+        android:paddingBottom="8dp">
+
+        <TextView
+            android:id="@+id/activity_material_video_topicNameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="12dp"
+            android:fontFamily="@font/varela"
+            android:text="Topic name"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="18dp" />
+
+
+        <TextView
+            android:id="@+id/activity_material_video_subtopicNameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/activity_material_video_topicNameTv"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="12dp"
+            android:fontFamily="@font/varela"
+            android:text="Sub-Topic name"
+            android:textColor="@color/darkGrey"
+            android:textSize="14dp" />
+
+
+        <View
+            android:id="@+id/mcjcxids"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/activity_material_video_subtopicNameTv"
+            android:layout_marginTop="8dp"
+            android:background="@color/grey"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/mcjcxids"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/yuyu"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ic_bookmark_border_black_24dp"
+                android:drawableTint="@color/google_blue"
+                android:fontFamily="@font/varela"
+                android:gravity="center"
+                android:text="Bookmark"
+                android:textColor="@color/google_blue"
+                android:textStyle="bold"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/activity_material_video_viewNotestTv"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ic_find_in_page_black_24dp"
+                android:drawableTint="@color/google_blue"
+                android:fontFamily="@font/varela"
+                android:gravity="center"
+                android:text="View Worksheet"
+                android:textColor="@color/google_blue"
+                android:textStyle="bold"
+                android:textSize="12dp" />
+
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/yuyu"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ic_cloud_download_black_24dp"
+                android:drawableTint="@color/jastest_grey"
+                android:fontFamily="@font/varela"
+                android:gravity="center"
+                android:text="Download"
+                android:textColor="@color/darkGrey"
+                android:textStyle="bold"
+                android:textSize="12dp" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+
+<androidx.core.widget.NestedScrollView
+    android:id="@+id/activity_material_video_nestedRl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/activity_material_video_relative1">
+
+    <RelativeLayout
+        android:id="@+id/mdidudii"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/activity_material_video_relative2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp">
+
+            <View
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/grey"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:visibility="visible"
+                android:id="@+id/activity_material_videos_videosRv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="0dp"
+                android:padding="12dp"
+                android:background="@color/cardColor"/>
+
+
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>
+
